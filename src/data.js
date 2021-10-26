@@ -1,0 +1,1 @@
+//---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
