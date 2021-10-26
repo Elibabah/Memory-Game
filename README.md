@@ -1,6 +1,6 @@
 # MEMORY GAME
 
-Application to play Memory Game online
+Aplicación para jugar Memorama en línea con dos usuarios
 
 ---
 
