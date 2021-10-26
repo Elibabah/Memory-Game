@@ -82,6 +82,8 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 - Iterar datos y obtener dinámicamente la información con memory.json
 - Bootstrap framework
 
+---
+
 ## **6. Configuración**
 
 ![Configuración](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/config.png)
@@ -100,6 +102,12 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **10. Agile**
 
-Kamban incial: Distribución de tareas.
+- **Inicio**
 
-Kamban final: tareas hechas.
+Backlog:
+![backlog1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban1.png)
+
+Kanban:
+![kanban1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban2.png)
+
+- **Final**
