@@ -82,11 +82,11 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 - Iterar datos y obtener dinámicamente la información con memory.json
 - Bootstrap framework
 
-## **6. Configuración**:
+## **6. Configuración**
+
+![Configuración](/data/assets.config.png)
 
 ## **7. Diagrama de flujo**
-
-![Diagrama](./assets/flujo.png)
 
 ---
 
