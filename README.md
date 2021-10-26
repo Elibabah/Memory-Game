@@ -65,8 +65,8 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **5. Conocimientos APP**
 
-- Javascript vanilla
-- Promesas con fetch
+- Javascript vanilla, promesas
+- Método fetch()
 - API
 - JSON
 - Módulos importación y exportación
@@ -75,7 +75,7 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 - Testing framework
 - Unit testing
 - Usp de gitignore
-- Modelado de ramas (development / release)
+- Modelado de ramas GitHub (development / release)
 - Diseño responsivo para desktop y ipad
 - HTML semántico
 - Implementación del SDLC
@@ -84,7 +84,7 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **6. Configuración**
 
-![Configuración](/data/assets.config.png)
+![Configuración](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/config.png)
 
 ## **7. Diagrama de flujo**
 
