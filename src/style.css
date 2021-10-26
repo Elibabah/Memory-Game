@@ -1,0 +1,68 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: .5fr 3fr 3fr 3fr 1fr 1fr 0.5fr;
+    grid-template-areas: "header header header header" "aside aside picture picture" "article article article nav" "data data data year" "contact list list year" "contact section section year" "footer footer footer footer";
+    background-color: rosybrown;
+    padding: 2%;
+    column-gap: 1%;
+    row-gap: .5%;
+    width: auto;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+picture {
+    grid-area: picture;
+}
+
+article {
+    grid-area: article;
+}
+
+nav {
+    grid-area: nav;
+}
+
+data {
+    grid-area: data;
+}
+
+year {
+    grid-area: year;
+}
+
+list {
+    grid-area: list;
+}
+
+contact {
+    grid-area: contact;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid-item {
+    background-color: blueviolet;
+    border: 10px dotted rgb(54, 65, 221);
+    border-radius: 5%;
+    padding: 2%;
+    font-size: 90%;
+}
+
+.responsive-img {
+    max-width: 100%;
+    max-height: 100%;
+}
