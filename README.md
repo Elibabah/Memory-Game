@@ -90,11 +90,11 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **7. Diagrama de flujo**
 
-## ![Diagrama](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/diagrama_flujo.png)
+![Diagrama](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/diagrama_flujo.png)
 
 ## **8. Diseño de Interfaz**
 
----
+![Maquetación](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/maquetacion.png)
 
 ## **9. Producto final**
 
