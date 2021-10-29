@@ -90,7 +90,7 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **7. Diagrama de flujo**
 
----
+## ![Diagrama](./assets/diagrama_flujo.png)
 
 ## **8. Diseño de Interfaz**
 
