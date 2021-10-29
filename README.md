@@ -1,6 +1,6 @@
 # MEMORY GAME
 
-Aplicación para jugar Memorama en línea con dos usuarios
+Aplicación para jugar Memorama interplanetario con dos usuarios terrestres
 
 ---
 
@@ -90,7 +90,7 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **7. Diagrama de flujo**
 
-## ![Diagrama](./assets/diagrama_flujo.png)
+## ![Diagrama](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/diagrama_flujo.png)
 
 ## **8. Diseño de Interfaz**
 
