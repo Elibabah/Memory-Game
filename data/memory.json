@@ -1,42 +1,62 @@
 {
     "memory_game": [{
-            "card_name": "tarjeta1-A",
+            "card_name": "earth-1",
+            "card_value": "7",
+            "card_image": "url"
+        },
+        {
+            "card_name": "earth-2",
+            "card_value": "7",
+            "card_image": "url"
+        },
+        {
+            "card_name": "moon-1",
             "card_value": "5",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta1-B",
+            "card_name": "moon-2",
             "card_value": "5",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta2-A",
-            "card_value": "5",
+            "card_name": "sun-1",
+            "card_value": "8",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta2-B",
-            "card_value": "5",
+            "card_name": "sun-2",
+            "card_value": "8",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta3-A",
-            "card_value": "5",
+            "card_name": "saturno-1",
+            "card_value": "9",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta3-B",
-            "card_value": "5",
+            "card_name": "saturno-2",
+            "card_value": "9",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta4-A",
-            "card_value": "5",
+            "card_name": "vialactea-1",
+            "card_value": "10",
             "card_image": "url"
         },
         {
-            "card_name": "tarjeta4-B",
-            "card_value": "5",
+            "card_name": "vialactea-2",
+            "card_value": "10",
+            "card_image": "url"
+        },
+        {
+            "card_name": "andromeda-1",
+            "card_value": "10",
+            "card_image": "url"
+        },
+        {
+            "card_name": "andromeda-2",
+            "card_value": "10",
             "card_image": "url"
         }
     ]
