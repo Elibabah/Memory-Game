@@ -1,43 +1,63 @@
 {
-    "memory_game": [{
-            "card_name": "tarjeta1-A",
-            "card_value": "5",
-            "card_image": "url"
+    "memory_Game": [{
+            "name": "earth-1",
+            "value": "7",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta1-B",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "earth-2",
+            "value": "7",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta2-A",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "moon-1",
+            "value": "5",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta2-B",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "moon-2",
+            "value": "5",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta3-A",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "sun-1",
+            "value": "8",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta3-B",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "sun-2",
+            "value": "8",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta4-A",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "saturno-1",
+            "value": "9",
+            "image": "url"
         },
         {
-            "card_name": "tarjeta4-B",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "saturno-2",
+            "value": "9",
+            "image": "url"
+        },
+        {
+            "name": "vialactea-1",
+            "value": "10",
+            "image": "url"
+        },
+        {
+            "name": "vialactea-2",
+            "value": "10",
+            "image": "url"
+        },
+        {
+            "name": "andromeda-1",
+            "value": "10",
+            "image": "url"
+        },
+        {
+            "name": "andromeda-2",
+            "value": "10",
+            "image": "url"
         }
     ]
 }
