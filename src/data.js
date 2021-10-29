@@ -16,16 +16,16 @@ let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá l
 
 
 // variable para el área de tarjetas
-let iterarTarjetas = (data) => {
+let iterarTarjetas = (data) => { // iterar el objeto
     console.log(data.memory_Game) // consologear el data del JSON
-    for (const ficha of data.memory_Game) {
-        console.log(ficha.name)
+    for (const ficha of data.memory_Game) { // iterar dinámicamente para entrar al objeto
+        console.log(ficha.name) // consologear la entrada al objeto
         mazo.innerHTML += // imprimir en HTML
             ` 
-        <div class="book-container">
-            <div class="book-portrait">
-                <div class="book-cover">${ficha.name}</div>
-                <div class="book-back">back</div>
+        <div class="card-container">
+            <div class="card-portrait">
+                <div class="card-cover">--frente--</div>
+                <div class="card-back">back: ${ficha.name}</div>
             </div>
         </div>
         `

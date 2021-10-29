@@ -60,10 +60,9 @@ main {
     max-height: 100%;
 }*/
 
-.carta {
-    background-color: honeydew;
+.card-container {
+    background-color: yellowgreen;
     display: flex;
-    border-radius: 50%;
     text-align: center;
     padding-top: 2em;
     height: 10em;
