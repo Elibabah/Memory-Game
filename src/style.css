@@ -1,68 +1,71 @@
-main {
+/*------------------------------------- GRID A TODO EL DOCUMENTO -------------------------------------------*/
+
+body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: .5fr 3fr 3fr 3fr 1fr 1fr 0.5fr;
-    grid-template-areas: "header header header header" "aside aside picture picture" "article article article nav" "data data data year" "contact list list year" "contact section section year" "footer footer footer footer";
-    background-color: rosybrown;
-    padding: 2%;
-    column-gap: 1%;
-    row-gap: .5%;
     width: auto;
+    height: 100vh;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 0.7fr 4fr 0.5fr;
+    grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
+    background-color: #000;
+    padding: 0%;
+    column-gap: 1.5%;
+    row-gap: 0.3%;
 }
 
 header {
     grid-area: header;
+    text-align: center;
+    padding-top: 2%;
+    background-color: transparent;
 }
 
-aside {
-    grid-area: aside;
+section1 {
+    grid-area: section1;
+    text-align: center;
+    padding-top: 15%;
 }
 
-picture {
-    grid-area: picture;
-}
-
-article {
-    grid-area: article;
-}
-
-nav {
-    grid-area: nav;
-}
-
-data {
-    grid-area: data;
-}
-
-year {
-    grid-area: year;
-}
-
-list {
-    grid-area: list;
-}
-
-contact {
-    grid-area: contact;
-}
-
-section {
-    grid-area: section;
+section2 {
+    grid-area: section2;
+    text-align: center;
+    padding-top: 15%;
 }
 
 footer {
     grid-area: footer;
+    text-align: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    /*para que se enrolle a cambio de tamaño */
+    flex-wrap: wrap;
+    gap: 1em 1em;
+    background-color: green;
+    color: #000;
 }
 
 .grid-item {
-    background-color: blueviolet;
-    border: 10px dotted rgb(54, 65, 221);
-    border-radius: 5%;
-    padding: 2%;
-    font-size: 90%;
+    background-color: #f0f0f0;
+    font-size: 110%;
 }
 
-.responsive-img {
+
+/*.responsive-img {
     max-width: 100%;
     max-height: 100%;
+}*/
+
+.carta {
+    background-color: honeydew;
+    display: flex;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2em;
+    height: 10em;
+    width: 7em;
 }
