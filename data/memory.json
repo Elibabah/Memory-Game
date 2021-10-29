@@ -1,0 +1,43 @@
+{
+    "memory_game": [{
+            "card_name": "tarjeta1-A",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta1-B",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta2-A",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta2-B",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta3-A",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta3-B",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta4-A",
+            "card_value": "5",
+            "card_image": "url"
+        },
+        {
+            "card_name": "tarjeta4-B",
+            "card_value": "5",
+            "card_image": "url"
+        }
+    ]
+}
