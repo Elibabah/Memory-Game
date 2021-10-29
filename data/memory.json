@@ -1,63 +1,63 @@
 {
     "memory_Game": [{
-            "card_name": "earth-1",
-            "card_value": "7",
-            "card_image": "url"
+            "name": "earth-1",
+            "value": "7",
+            "image": "url"
         },
         {
-            "card_name": "earth-2",
-            "card_value": "7",
-            "card_image": "url"
+            "name": "earth-2",
+            "value": "7",
+            "image": "url"
         },
         {
-            "card_name": "moon-1",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "moon-1",
+            "value": "5",
+            "image": "url"
         },
         {
-            "card_name": "moon-2",
-            "card_value": "5",
-            "card_image": "url"
+            "name": "moon-2",
+            "value": "5",
+            "image": "url"
         },
         {
-            "card_name": "sun-1",
-            "card_value": "8",
-            "card_image": "url"
+            "name": "sun-1",
+            "value": "8",
+            "image": "url"
         },
         {
-            "card_name": "sun-2",
-            "card_value": "8",
-            "card_image": "url"
+            "name": "sun-2",
+            "value": "8",
+            "image": "url"
         },
         {
-            "card_name": "saturno-1",
-            "card_value": "9",
-            "card_image": "url"
+            "name": "saturno-1",
+            "value": "9",
+            "image": "url"
         },
         {
-            "card_name": "saturno-2",
-            "card_value": "9",
-            "card_image": "url"
+            "name": "saturno-2",
+            "value": "9",
+            "image": "url"
         },
         {
-            "card_name": "vialactea-1",
-            "card_value": "10",
-            "card_image": "url"
+            "name": "vialactea-1",
+            "value": "10",
+            "image": "url"
         },
         {
-            "card_name": "vialactea-2",
-            "card_value": "10",
-            "card_image": "url"
+            "name": "vialactea-2",
+            "value": "10",
+            "image": "url"
         },
         {
-            "card_name": "andromeda-1",
-            "card_value": "10",
-            "card_image": "url"
+            "name": "andromeda-1",
+            "value": "10",
+            "image": "url"
         },
         {
-            "card_name": "andromeda-2",
-            "card_value": "10",
-            "card_image": "url"
+            "name": "andromeda-2",
+            "value": "10",
+            "image": "url"
         }
     ]
 }
