@@ -1,5 +1,5 @@
 //---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
-
+alert("connected")
 
 // Exportación de módulos
 export let getCardsfromAPI = (tarjetaParaBuscar) => {}
@@ -21,11 +21,14 @@ let iterarTarjetas = (data) => { // iterar el objeto
     for (const ficha of data.memory_Game) { // iterar dinámicamente para entrar al objeto
         console.log(ficha.name) // consologear la entrada al objeto
         mazo.innerHTML += // imprimir en HTML
-            ` 
-        <div class="card-container">
+            `
+            <div class="card-container">
             <div class="card-portrait">
-                <div class="card-cover">--frente--</div>
-                <div class="card-back">back: ${ficha.name}</div>
+            <div class="card-cover">FRONT</div> 
+            <div class="card-back" id='${ficha.name}'>back:
+            <h5>${ficha.name}</h5>
+            <p class="value" id='${ficha.name}_value'</p>
+            </div>
             </div>
         </div>
         `

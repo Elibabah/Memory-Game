@@ -18,25 +18,35 @@ header {
     text-align: center;
     padding-top: 2%;
     background-color: transparent;
+    color: aliceblue;
 }
 
 section1 {
     grid-area: section1;
     text-align: center;
     padding-top: 15%;
+    color: aliceblue;
 }
 
 section2 {
     grid-area: section2;
     text-align: center;
     padding-top: 15%;
+    color: aliceblue;
 }
 
 footer {
     grid-area: footer;
     text-align: center;
     align-items: center;
+    color: aliceblue;
+    padding-bottom: 1%;
+    font-size: 100%;
     padding-top: 1%;
+}
+
+.btn {
+    color: #8B0000;
 }
 
 main {
@@ -49,22 +59,77 @@ main {
     color: #000;
 }
 
-.grid-item {
-    background-color: #f0f0f0;
-    font-size: 110%;
-}
-
 
 /*.responsive-img {
     max-width: 100%;
     max-height: 100%;
 }*/
 
-.card-container {
-    background-color: yellowgreen;
-    display: flex;
+.card {
+    background: aqua;
+    background-size: cover;
+    width: 10em;
+    height: 8em;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1.5em;
     text-align: center;
+    color: #efb810;
+}
+
+.card-container {
+    display: block;
+    margin: auto;
     padding-top: 2em;
-    height: 10em;
-    width: 7em;
+    margin-left: 2%;
+    height: 13em;
+    width: 8em;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.card-portrait {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-portrait:hover {
+    transform: rotateY(180deg);
+}
+
+.card-cover,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Internet Explorer compatibility*/
+    backface-visibility: hidden;
+}
+
+.card-cover {
+    background-color: #F00;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.card-back {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    color: #efb810;
+    transform: rotateY(180deg);
 }
