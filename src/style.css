@@ -113,7 +113,7 @@ main {
 }
 
 .card-cover {
-    background-color: #F00;
+    background-image: url(https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/estrella.jpeg);
     background-size: cover;
     width: 100%;
     justify-content: center;

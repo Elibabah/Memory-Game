@@ -1,5 +1,4 @@
 //---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
-alert("connected")
 
 // Exportación de módulos
 export let getCardsfromAPI = (tarjetaParaBuscar) => {}
@@ -24,13 +23,16 @@ let iterarTarjetas = (data) => { // iterar el objeto
             `
             <div class="card-container">
             <div class="card-portrait">
-            <div class="card-cover">FRONT</div> 
+            <div class="card-cover"></div> 
             <div class="card-back" id='${ficha.name}'>back:
-            <h5>${ficha.name}</h5>
             <p class="value" id='${ficha.name}_value'</p>
             </div>
             </div>
         </div>
         `
+
+        let caraCard = document.getElementById(`${ficha.name}`)
+        caraCard.style.backgroundImage = "url(" + ` ${ficha.image}` + ")"
+        caraCard.style.backgroundSize = "cover"
     }
 }

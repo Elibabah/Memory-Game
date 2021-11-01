@@ -1,11 +1,11 @@
 {
     "memory_Game": [{
-            "name": "earth-1",
+            "name": "astronauta-1",
             "value": "7",
-            "image": "url"
+            "image": "./data/assets/cards/astronauta.jpeg"
         },
         {
-            "name": "earth-2",
+            "name": "astronauta-2",
             "value": "7",
             "image": "url"
         },
