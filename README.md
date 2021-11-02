@@ -29,7 +29,7 @@ Una niña en edad escolar ha encontrado asombroso el mundo del aprendizaje y las
 
 ## **2. Descripción**
 
-Aplicación para jugar memorama en línea.
+Aplicación para jugar memorama creada con Javascript Vanilla, CSS3, HTML5 y Bootstrap.
 
 ---
 
