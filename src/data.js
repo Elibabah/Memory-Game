@@ -24,7 +24,7 @@ let iterarTarjetas = (data) => { // iterar el objeto
             <div class="card-container">
             <div class="card-portrait">
             <div class="card-cover"></div> 
-            <div class="card-back" id='${ficha.name}'>back:
+            <div class="card-back" id='${ficha.name}'>
             <p class="value" id='${ficha.name}_value'</p>
             </div>
             </div>

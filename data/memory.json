@@ -2,20 +2,20 @@
     "memory_Game": [{
             "name": "astronauta-1",
             "value": "7",
-            "image": "./data/assets/cards/astronauta.jpeg"
+            "image": "https://image.shutterstock.com/image-vector/astronaut-landing-on-moon-holding-260nw-1815201758.jpg"
         },
         {
             "name": "astronauta-2",
             "value": "7",
-            "image": "url"
+            "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/cards/astronauta.jpeg"
         },
         {
-            "name": "moon-1",
+            "name": "earth-1",
             "value": "5",
-            "image": "url"
+            "image": ""
         },
         {
-            "name": "moon-2",
+            "name": "earth-2",
             "value": "5",
             "image": "url"
         },
