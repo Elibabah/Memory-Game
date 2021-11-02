@@ -102,12 +102,8 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **10. Agile**
 
-- **Inicio**
+**Kanban inicio:**
 
-Backlog:
-![backlog1](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/kanban1.png)
-
-Kanban:
-![kanban1]()
+![kanban_inicio](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/kanban_inicio.png)
 
 - **Final**
