@@ -2,7 +2,7 @@
     "memory_Game": [{
             "name": "astronauta-1",
             "value": "7",
-            "image": "./data/assets/cards/astronauta.jpg"
+            "image": "../data/assets/cards/astronauta.jpg"
         },
         {
             "name": "astronauta-2",
@@ -12,17 +12,17 @@
         {
             "name": "earth-1",
             "value": "5",
-            "image": "https://img.europapress.es/fotoweb/fotonoticia_20150210180922_420.jpg"
+            "image": "../data/assets/cards/earth.jpg"
         },
         {
             "name": "earth-2",
             "value": "5",
-            "image": "https://content.gnoss.ws/imagenes/Documentos/imgsem/59/5948/59488656-96e9-ae8c-ebd9-88e1301f777f/64acf21a-9770-4fa0-7395-0ba5134a0670.jpg"
+            "image": ""
         },
         {
             "name": "moon-1",
             "value": "8",
-            "image": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2015/12/24/14509591518629.jpg"
+            "image": "../data/assets/cards/moon.jpg"
         },
         {
             "name": "moon-2",
@@ -30,34 +30,64 @@
             "image": "url"
         },
         {
-            "name": "saturno-1",
+            "name": "jupiter-1",
+            "value": "9",
+            "image": "../data/assets/cards/jupiter3.jpeg"
+        },
+        {
+            "name": "jupiter-2",
             "value": "9",
             "image": ""
         },
         {
-            "name": "saturno-2",
-            "value": "9",
-            "image": "https://trome.pe/resizer/wXk_qLG9or9RTHBrFTAU6YDugV8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/GTUIPAQ7BNACDOU4H22DREHF6U.jpg"
+            "name": "cohete-1",
+            "value": "10",
+            "image": "../data/assets/cards/cohete.jpg"
         },
         {
-            "name": "vialactea-1",
+            "name": "cohete-2",
             "value": "10",
             "image": "url"
         },
         {
-            "name": "vialactea-2",
+            "name": "sun-1",
             "value": "10",
-            "image": "url"
+            "image": "../data/assets/cards/sun.jpg"
         },
         {
-            "name": "andromeda-1",
+            "name": "sun-2",
             "value": "10",
-            "image": "url"
+            "image": ""
         },
         {
-            "name": "andromeda-2",
+            "name": "marte-1",
             "value": "10",
-            "image": "url"
+            "image": "../data/assets/cards/marte.jpg"
+        },
+        {
+            "name": "marte-2",
+            "value": "10",
+            "image": ""
+        },
+        {
+            "name": "venus-1",
+            "value": "10",
+            "image": "../data/assets/cards/venus.png"
+        },
+        {
+            "name": "venus-2",
+            "value": "10",
+            "image": ""
+        },
+        {
+            "name": "neptuno-1",
+            "value": "10",
+            "image": "../data/assets/cards/nept.jpeg"
+        },
+        {
+            "name": "neptuno-2",
+            "value": "10",
+            "image": ""
         }
     ]
 }
