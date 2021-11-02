@@ -94,7 +94,7 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **8. Diseño de Interfaz**
 
-![Maquetación](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/maquetacion.png)
+![Maquetación](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/maquetacion.png)
 
 ## **9. Producto final**
 
@@ -105,9 +105,9 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 - **Inicio**
 
 Backlog:
-![backlog1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban1.png)
+![backlog1](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/kanban1.png)
 
 Kanban:
-![kanban1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban2.png)
+![kanban1]()
 
 - **Final**
