@@ -46,5 +46,21 @@ let iterarTarjetas = (data) => { // iterar el objeto
             // AQUÍ ESTÁ EL PROBLEMA: el toggle no me devuelve la clase flipCard a todas las tags cardPortrait de c/ficha; sólo a la primera
             cardPortrait.classList.toggle("flipCard");
         }
+
+
+        //Solución a implementar
+        /*    function flipCard() {
+                let selected = this.dataset.id;
+                cardsSelected.push(cardArray[selected].name);
+                cardsId.push(selected);
+                this.classList.add("flip");
+                this.setAttribute("src", cardArray[selected].img);
+                if (cardsId.length === 2) {
+                    setTimeout(checkForMatch, 500);
+                }
+            } */
+
+
+
     }
 }
