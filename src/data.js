@@ -22,15 +22,15 @@ let iterarTarjetas = (data) => { // iterar el objeto
         mazo.innerHTML += // imprimir en HTML
             `
             <div class="card-container">
-                <div class="cardPortrait" onclick="testScope('${ficha.name}_click')"> 
+                <div class="cardPortrait" id='${ficha.id}_flip' onclick="checkClick('${ficha.name}', '${ficha.id}')"> 
                     <div class="card-cover"></div> 
-                    <div class="card-back" id='${ficha.name}'></div>
+                    <div class="card-back" id='${ficha.id}'></div>
                 </div>
             </div>
         `
 
         // declaración para dar estilos dinámicamente por ID-nombre a la imagen oculta        
-        let caraCard = document.getElementById(`${ficha.name}`)
+        let caraCard = document.getElementById(`${ficha.id}`)
         caraCard.style.backgroundImage = "url(" + ` ${ficha.image}` + ")"
         caraCard.style.backgroundSize = "cover"
 

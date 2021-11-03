@@ -1,112 +1,112 @@
 {
     "memory_Game": [{
             "id": "astro1",
-            "name": "astronauta-1",
+            "name": "astronauta",
             "value": "7",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/astronauta.jpg"
         },
         {
 
             "id": "astro2",
-            "name": "astronauta-2",
+            "name": "astronauta",
             "value": "7",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/astronauta.jpg"
         },
         {
 
             "id": "tierra1",
-            "name": "earth-1",
+            "name": "earth",
             "value": "5",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/earth.jpg"
         },
         {
             "id": "tierra2",
-            "name": "earth-2",
+            "name": "earth",
             "value": "5",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/earth.jpg"
         },
         {
             "id": "luna1",
-            "name": "moon-1",
+            "name": "moon",
             "value": "8",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/moon.jpg"
         },
         {
             "id": "luna2",
-            "name": "moon-2",
+            "name": "moon",
             "value": "8",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/moon.jpg"
         },
         {
             "id": "jup1",
-            "name": "jupiter-1",
+            "name": "jupiter",
             "value": "9",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/jupiter3.jpeg"
         },
         {
             "id": "jup2",
-            "name": "jupiter-2",
+            "name": "jupiter",
             "value": "9",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/jupiter3.jpeg"
         },
         {
             "id": "cohete1",
-            "name": "cohete-1",
+            "name": "cohete",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/cohete.jpg"
         },
         {
             "id": "cohete2",
-            "name": "cohete-2",
+            "name": "cohete",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/cohete.jpg"
         },
         {
 
             "id": "sun1",
-            "name": "sun-1",
+            "name": "sun",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/sun.jpg"
         },
         {
             "id": "sun2",
-            "name": "sun-2",
+            "name": "sun",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/sun.jpg"
         },
         {
             "id": "mars1",
-            "name": "marte-1",
+            "name": "marte",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/marte.jpg"
         },
         {
             "id": "mars2",
-            "name": "marte-2",
+            "name": "marte",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/marte.jpg"
         },
         {
             "id": "venus1",
-            "name": "venus-1",
+            "name": "venus",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/venus.png"
         },
         {
             "id": "venus2",
-            "name": "venus-2",
+            "name": "venus",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/venus.png"
         },
         {
             "id": "neptuno1",
-            "name": "neptuno-1",
+            "name": "neptuno",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/nept.jpeg"
         },
         {
             "id": "neptuno2",
-            "name": "neptuno-2",
+            "name": "neptuno",
             "value": "10",
             "image": "https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/cards/nept.jpeg"
         }
