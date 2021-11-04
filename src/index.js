@@ -6,12 +6,17 @@ import { getCardsfromAPI } from "./data.js";
 
 let click = false; // boleano
 //declaración de funciones
+
+//cartas
 let carta1;
 let id1;
 let carta2;
 let id2;
-//let bloquear = false;
 
+//contador
+let Player1 = 0;
+let Player2 = 0;
+let turn = true;
 
 
 
@@ -31,7 +36,7 @@ window.gameTest = {
 
         //------------ funciones de matching cards -----------//
 
-        if (click == false) { //guardar datos en variable boleano para 2 click true false
+        if (click == false) { //guardar datos en variable booleano para 2 click true false
             //primer click con una carta1 y valor1
             carta1 = cardName
             id1 = cardId
@@ -60,7 +65,21 @@ window.gameTest = {
                 cardFlip.removeAttribute("onclick"); //segunda carta
                 cardFlip1.removeAttribute("onclick"); // primera carta
 
-                //Desde aquí se puede hacer función para sonido
+                // Guardar puntaje Jugador 1
+                if (turn) {
+                    console.log("turno Jugador 2")
+                    turn = false;
+                    Player1++;
+                    console.log(Player1)
+                    document.getElementById("P1").innerHTML = Player1;
+                } else {
+                    console.log("turno Jugador 1");
+                    turn = true;
+                    Player2++;
+                    console.log(Player2);
+                    document.getElementById("P2").innerHTML = Player2;
+                }
+                //Meter aquí función de sonido
 
             } else {
                 console.log("no es match")

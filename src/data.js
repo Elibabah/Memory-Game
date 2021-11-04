@@ -14,9 +14,19 @@ fetch("../data/memory.json")
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
 
 
+
+
+
+
+
+
 // variable para el área de tarjetas
 let iterarTarjetas = (data) => { // iterar el objeto
     console.log(data.memory_Game) // consologuear el data del JSON
+
+    //SORT
+    //data.memory_Game.sort(() => Math.random() - 0.5) // Función para desordenar el arreglo (sort para desordenar objeto)
+
     for (const ficha of data.memory_Game) { // iterar dinámicamente para entrar al objeto
         console.log(ficha.name) // consologuear la entrada al objeto
         mazo.innerHTML += // imprimir en HTML
