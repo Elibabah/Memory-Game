@@ -47,23 +47,29 @@ window.gameTest = {
             if (carta1 == carta2 && id1 != id2) { //match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
+                document.getElementById("CardId1").removeAttribute()
+                document.getElementById("CardId2").removeAttribute()
                 carta1 = null;
                 id1 = null;
                 carta2 = null;
                 id2 = null;
                 //Desde aquí se puede hacer función para sonido
                 // Desactivar tarjetas en match
-            } else {
-                alert("no es match")
-                cardFlip.style.transform = ""
-                let cardFlip2 = document.getElementById(id1 + '_flip')
-                console.log(cardFlip2)
-                cardFlip2.style.transform = "";
 
-                carta1 = null;
-                id1 = null;
-                carta2 = null;
-                id2 = null;
+
+            } else {
+                console.log("no es match")
+                    //Set time out para devolver cartas
+                setTimeout(() => {
+                    cardFlip.style.transform = ""; //volver carta1
+                    let cardFlip1 = document.getElementById(id1 + "_flip");
+                    cardFlip1.style.transform = ""; //volver carta2
+                    // limpiar valores
+                    carta1 = null;
+                    id1 = null;
+                    carta2 = null;
+                    id2 = null;
+                }, 1010); // tiempo del setTimeout
             }
         }
 
