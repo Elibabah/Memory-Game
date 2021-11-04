@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!----------------------------------------------// BODY GRID //------------------------------------------------>
+
 <body>
 
     <header class="grid-item">GALAXY MEMORY GAME</header>
@@ -27,11 +29,12 @@
         </div>November 2021
     </footer>
 
-    <!---------------- zona script ------------------------->
+    <!----------------------------------// CONEXIÓN MODULAR SCRIPT //----------------------------------------->
     <script src="index.js" type="module"></script>
     |
 
-    <!--Función dinámica de click-->
+    <!------------------------------// DECLARACIÓN GLOBAL DE VARIABLES // ------------------------------------>
+    <!--------------------- de los valores de data.js para usarlos en index.js ------------------------------->
     <script>
         let checkClick = (cardName, cardId) => {
             gameTest.checkMatch(cardName, cardId)

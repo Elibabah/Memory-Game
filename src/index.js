@@ -3,6 +3,7 @@
 
 // Importación de módulos. Recibe el EXPORT de data.js
 import { getCardsfromAPI } from "./data.js";
+
 let click = false; // boleano
 //declaración de funciones
 let carta1;
@@ -31,7 +32,7 @@ window.gameTest = {
             carta1 = cardName
             id1 = cardId
             click = true;
-            alert("primer click a " + carta1 + " " + id1)
+            //alert("primer click a " + carta1 + " " + id1)
         } else {
             //segundo click con otra carta y su valor, carta 2 y valor 2
             carta2 = cardName
@@ -60,7 +61,7 @@ window.gameTest = {
     }
 }
 
-//presudocódigo de matching cards
+
 
 //definir un turno que contiene 2 clicks
 
