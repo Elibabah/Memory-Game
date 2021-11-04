@@ -10,6 +10,7 @@ let carta1;
 let id1;
 let carta2;
 let id2;
+let bloquear = false;
 
 
 // Función global desde script index.html
@@ -17,15 +18,16 @@ window.gameTest = {
     testScope: (cardName) => {
         console.log("click en card: " + cardName)
     },
-    checkMatch: (cardName, cardId) => { // boleano
+    checkMatch: (cardName, cardId) => { // booleano
         //Función voltear cartas
         let cardFlip = document.getElementById(cardId + "_flip")
         console.log(cardName, cardId)
 
         cardFlip.style.transform = "rotateY(180deg)"
+        console.log(cardName, cardId)
 
 
-        //funciones de matching cards
+        //------------ funciones de matching cards -----------//
 
         if (click == false) { //guardar datos en variable boleano para 2 click true false
             //primer click con una carta1 y valor1
@@ -52,15 +54,11 @@ window.gameTest = {
                 //Desde aquí se puede hacer función para sonido
                 // Desactivar tarjetas en match
             } else {
-                console.log("no es match")
-
-                let cardFlip2 = document.getElementById(id1 + "_flip")
-                cardFlip2.style.transform = "" //volver carta1
-
+                alert("no es match")
+                cardFlip.style.transform = ""
+                let cardFlip2 = document.getElementById(id1 + '_flip')
                 console.log(cardFlip2)
-                cardFlip2.style.transform = ""; //volver carta2
-                let cardFlip1 = document.getElementById(id1 + "_flip")
-                cardFlip1.style.transform = ""; //volver carta2
+                cardFlip2.style.transform = "";
 
                 carta1 = null;
                 id1 = null;
@@ -68,6 +66,7 @@ window.gameTest = {
                 id2 = null;
             }
         }
+
     }
 }
 
