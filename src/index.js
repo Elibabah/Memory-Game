@@ -12,13 +12,13 @@ let carta2;
 let id2;
 
 
+// Función global desde script index.html
 window.gameTest = {
     testScope: (cardName) => {
         console.log("click en card: " + cardName)
-            //match(nombre == nombre)
     },
     checkMatch: (cardName, cardId) => { // boleano
-        //voltear cartas
+        //Función voltear cartas
         let cardFlip = document.getElementById(cardId + "_flip")
         console.log(cardName, cardId)
 
@@ -37,21 +37,31 @@ window.gameTest = {
             //segundo click con otra carta y su valor, carta 2 y valor 2
             carta2 = cardName
             id2 = cardId
-                //alert("segundo click a: " + carta2 + " " + id2)
-            click = false
+            click = false;
+            //alert("segundo click a: " + carta2 + " " + id2)
 
+            //Comparar si la carta1 == carta2 es un match
+            console.log(carta1)
             if (carta1 == carta2 && id1 != id2) { //match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
-                //alert("es un match")
+                console.log("es un match")
                 carta1 = null;
                 id1 = null;
                 carta2 = null;
-                id2 = null; //Aquí se puede hacer función para sonido
+                id2 = null;
+                //Desde aquí se puede hacer función para sonido
+                // Desactivar tarjetas en match
             } else {
-                //alert("no es match")
-                cardFlip.style.transform = "" //volver carta1
+                console.log("no es match")
+
+                let cardFlip2 = document.getElementById(id1 + "_flip")
+                cardFlip2.style.transform = "" //volver carta1
+
+                console.log(cardFlip2)
+                cardFlip2.style.transform = ""; //volver carta2
                 let cardFlip1 = document.getElementById(id1 + "_flip")
-                cardFlip1.style.transform = "" //volver carta2
+                cardFlip1.style.transform = ""; //volver carta2
+
                 carta1 = null;
                 id1 = null;
                 carta2 = null;
