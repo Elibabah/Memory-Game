@@ -10,20 +10,22 @@ let carta1;
 let id1;
 let carta2;
 let id2;
-let bloquear = false;
+//let bloquear = false;
+
+
 
 
 // Función global desde script index.html
 window.gameTest = {
-    testScope: (cardName) => {
-        console.log("click en card: " + cardName)
-    },
     checkMatch: (cardName, cardId) => { // booleano
         //Función voltear cartas
-        let cardFlip = document.getElementById(cardId + "_flip")
+        let cardFlip = document.getElementById(cardId + "_flip") //carta 2
         console.log(cardName, cardId)
+        let cardFlip1 = document.getElementById(id1 + "_flip"); // carta 1
+
 
         cardFlip.style.transform = "rotateY(180deg)"
+
         console.log(cardName, cardId)
 
 
@@ -47,23 +49,25 @@ window.gameTest = {
             if (carta1 == carta2 && id1 != id2) { //match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
-                document.getElementById("CardId1").removeAttribute()
-                document.getElementById("CardId2").removeAttribute()
+
+                // Limpiar valores
                 carta1 = null;
                 id1 = null;
                 carta2 = null;
                 id2 = null;
-                //Desde aquí se puede hacer función para sonido
-                // Desactivar tarjetas en match
 
+                // Desactivar tarjetas en match
+                cardFlip.removeAttribute("onclick"); //segunda carta
+                cardFlip1.removeAttribute("onclick"); // primera carta
+
+                //Desde aquí se puede hacer función para sonido
 
             } else {
                 console.log("no es match")
                     //Set time out para devolver cartas
                 setTimeout(() => {
-                    cardFlip.style.transform = ""; //volver carta1
-                    let cardFlip1 = document.getElementById(id1 + "_flip");
-                    cardFlip1.style.transform = ""; //volver carta2
+                    cardFlip.style.transform = ""; //volver carta2
+                    cardFlip1.style.transform = ""; //volver carta1
                     // limpiar valores
                     carta1 = null;
                     id1 = null;
@@ -75,9 +79,3 @@ window.gameTest = {
 
     }
 }
-
-
-
-//definir un turno que contiene 2 clicks
-
-//si la carta1 != carta 2 no es un match
