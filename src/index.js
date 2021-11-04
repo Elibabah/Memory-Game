@@ -21,11 +21,11 @@ window.gameTest = {
         //Función voltear cartas
         let cardFlip = document.getElementById(cardId + "_flip") //carta 2
         console.log(cardName, cardId)
+
         let cardFlip1 = document.getElementById(id1 + "_flip"); // carta 1
 
 
-        cardFlip.style.transform = "rotateY(180deg)"
-
+        cardFlip.style.transform = "rotateY(180deg)" // Efecto de volteo
         console.log(cardName, cardId)
 
 
@@ -36,17 +36,17 @@ window.gameTest = {
             carta1 = cardName
             id1 = cardId
             click = true;
-            //alert("primer click a " + carta1 + " " + id1)
+            console.log("primer click a " + carta1 + " " + id1)
         } else {
             //segundo click con otra carta y su valor, carta 2 y valor 2
             carta2 = cardName
             id2 = cardId
             click = false;
-            //alert("segundo click a: " + carta2 + " " + id2)
+            console.log("segundo click a: " + carta2 + " " + id2)
 
             //Comparar si la carta1 == carta2 es un match
             console.log(carta1)
-            if (carta1 == carta2 && id1 != id2) { //match en el mismo nombre pero con diferente id
+            if (carta1 == carta2 && id1 != id2) { // match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
 
@@ -56,7 +56,7 @@ window.gameTest = {
                 carta2 = null;
                 id2 = null;
 
-                // Desactivar tarjetas en match
+                // Desactivar tarjetas matcheadas
                 cardFlip.removeAttribute("onclick"); //segunda carta
                 cardFlip1.removeAttribute("onclick"); // primera carta
 
@@ -68,12 +68,13 @@ window.gameTest = {
                 setTimeout(() => {
                     cardFlip.style.transform = ""; //volver carta2
                     cardFlip1.style.transform = ""; //volver carta1
-                    // limpiar valores
-                    carta1 = null;
-                    id1 = null;
-                    carta2 = null;
-                    id2 = null;
                 }, 1010); // tiempo del setTimeout
+
+                // limpiar valores
+                carta1 = null;
+                id1 = null;
+                carta2 = null;
+                id2 = null;
             }
         }
 
