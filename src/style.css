@@ -8,35 +8,49 @@ body {
     grid-template-rows: 0.7fr 4fr 0.5fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
     background-color: #000;
+    background-size: cover;
     padding: 0%;
-    column-gap: 1.5%;
-    row-gap: 0.3%;
+    column-gap: 0%;
+    row-gap: 0%;
 }
 
 header {
     grid-area: header;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     background-color: transparent;
+    color: aliceblue;
 }
 
 section1 {
     grid-area: section1;
     text-align: center;
     padding-top: 15%;
+    color: aliceblue;
 }
 
 section2 {
     grid-area: section2;
     text-align: center;
     padding-top: 15%;
+    color: aliceblue;
 }
 
 footer {
     grid-area: footer;
     text-align: center;
     align-items: center;
-    padding-top: 1%;
+    color: aliceblue;
+    padding-bottom: 2%;
+    font-size: 100%;
+    padding-top: 3.5%;
+    /*background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/204180/aceef6d078c24ad92392b0ad066af923f2f96012.jpg);
+    background-size: cover;*/
+}
+
+.btn {
+    color: #8B0000;
 }
 
 main {
@@ -45,13 +59,7 @@ main {
     /*para que se enrolle a cambio de tamaño */
     flex-wrap: wrap;
     gap: 1em 1em;
-    background-color: green;
     color: #000;
-}
-
-.grid-item {
-    background-color: #f0f0f0;
-    font-size: 110%;
 }
 
 
@@ -60,12 +68,68 @@ main {
     max-height: 100%;
 }*/
 
-.carta {
-    background-color: honeydew;
-    display: flex;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 2em;
+.card {
+    display: block;
+    margin: auto;
+    width: 10em;
     height: 10em;
-    width: 7em;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
+    display: block;
+    margin: auto;
+    height: 10em;
+    width: 10em;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.cardPortrait {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+/*.cardPortrait:hover {
+    transform: rotateY(180deg);
+}*/
+
+.card-cover,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Internet Explorer compatibility*/
+    backface-visibility: hidden;
+}
+
+.card-cover {
+    background-image: url(https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/estrella.jpeg);
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flipCard {
+    transform: rotateY(180deg);
 }

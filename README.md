@@ -1,6 +1,6 @@
 # MEMORY GAME
 
-Aplicación para jugar Memorama en línea con dos usuarios
+Aplicación para jugar Memorama interplanetario con dos usuarios terrestres
 
 ---
 
@@ -29,7 +29,7 @@ Una niña en edad escolar ha encontrado asombroso el mundo del aprendizaje y las
 
 ## **2. Descripción**
 
-Aplicación para jugar memorama en línea.
+Aplicación para jugar memorama creada con Javascript Vanilla, CSS3, HTML5 y Bootstrap.
 
 ---
 
@@ -47,19 +47,19 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **4. Criterios de aceptación**
 
-    -Esta aplicación debe permitir que dos usuarios jueguen en el sitio web al memorama.
+- Esta aplicación debe permitir que dos usuarios jueguen en el sitio web al memorama.
 
-    -Las cartas deben girar automáticamente (devolverse) si la carta no coincide y deben permanecer volteadas si estas coinciden en par.
+- Las cartas deben girar automáticamente (devolverse) si la carta no coincide y deben permanecer volteadas si estas coinciden en par.
 
-    -Cada jugador debe mantener la puntuación de cuántos intentos han coincidido.
+- Cada jugador debe mantener la puntuación de cuántos intentos han coincidido.
 
-    -El juego de memoria debe indicar el turno de cada uno.
+- El juego de memoria debe indicar el turno de cada uno.
 
-    -Al final el juego debe mostrar el nombre del ganador y el marcador contra el que ha perdido.
+- Al final el juego debe mostrar el nombre del ganador y el marcador contra el que ha perdido.
 
-    -El producto debe deployarse y entregarse en URL.
+- El producto debe deployarse y entregarse en URL.
 
-    -El juego debe ser plenamente responsivo para cualquier tamaño Desktop, Ipad o cualquier dimensión.
+- El juego debe ser plenamente responsivo para cualquier tamaño Desktop, Ipad o cualquier dimensión.
 
 ---
 
@@ -86,15 +86,15 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **6. Configuración**
 
-![Configuración](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/config.png)
+![Configuración](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/config.png)
 
 ## **7. Diagrama de flujo**
 
----
+![Diagrama](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/diagrama_flujo.png)
 
 ## **8. Diseño de Interfaz**
 
----
+![Maquetación](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/maquetacion.png)
 
 ## **9. Producto final**
 
@@ -102,12 +102,8 @@ Los usuarios quieren jugar un juego en el sitio con un compañero para pasar el 
 
 ## **10. Agile**
 
-- **Inicio**
+**Kanban inicio:**
 
-Backlog:
-![backlog1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban1.png)
-
-Kanban:
-![kanban1](https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/kanban2.png)
+![kanban_inicio](https://raw.githubusercontent.com/Elibabah/Memory-Game/release/data/assets/readme_img/kanban_inicio.png)
 
 - **Final**
