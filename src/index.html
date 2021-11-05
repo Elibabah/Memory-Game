@@ -13,22 +13,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!----------------------------------------------// BODY GRID //------------------------------------------------>
+
 <body>
 
     <header class="grid-item">GALAXY MEMORY GAME</header>
-    <section1 class="grid-item">Player 1</section1>
+    <section1 class="grid-item">Player 1
+        <p id="P1"></p>
+    </section1>
     <main id="juego"></main>
-    <section2 class="grid-item">Player 2</section2>
+    <section2 class="grid-item">Player 2
+        <p id="P2"></p>
+    </section2>
     <footer class="grid-item">Made by Elibabah!<br>
         <div id="social">
             <a href="https://github.com/Elibabah" target="_blank" class="btn">Github</a>
             <a href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/" target="_blank" class="btn">LinkedIn</a>
             <a href="https://www.instagram.com/delias16.hernandez/" target="_blank" class="btn">Instagram</a>
-        </div>
+        </div>November 2021
     </footer>
 
-    <!---------------- zona script ------------------------->
+    <!----------------------------------// CONEXIÓN MODULAR SCRIPT //----------------------------------------->
     <script src="index.js" type="module"></script>
+    |
+
+    <!------------------------------// DECLARACIÓN GLOBAL DE VARIABLES // ------------------------------------>
+    <!--------------------- de los valores de data.js para usarlos en index.js ------------------------------->
+    <script>
+        let checkClick = (cardName, cardId) => {
+            gameTest.checkMatch(cardName, cardId)
+        }
+    </script>
 </body>
 
 </html>

@@ -14,24 +14,33 @@ fetch("../data/memory.json")
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
 
 
+
+
+
+
+
+
 // variable para el área de tarjetas
 let iterarTarjetas = (data) => { // iterar el objeto
-    console.log(data.memory_Game) // consologear el data del JSON
+    console.log(data.memory_Game) // consologuear el data del JSON
+
+    //SORT
+    //  data.memory_Game.sort(() => Math.random() - 0.5) // Función para desordenar el arreglo (sort para desordenar objeto)
+
     for (const ficha of data.memory_Game) { // iterar dinámicamente para entrar al objeto
-        console.log(ficha.name) // consologear la entrada al objeto
+        console.log(ficha.name) // consologuear la entrada al objeto
         mazo.innerHTML += // imprimir en HTML
             `
             <div class="card-container">
-            <div class="card-portrait">
-            <div class="card-cover"></div> 
-            <div class="card-back" id='${ficha.name}'>
-            <p class="value" id='${ficha.name}_value'</p>
+                <div class="cardPortrait" id='${ficha.id}_flip' onclick="checkClick('${ficha.name}', '${ficha.id}')"> 
+                    <div class="card-cover"></div> 
+                    <div class="card-back" id='${ficha.id}'></div>
+                </div>
             </div>
-            </div>
-        </div>
         `
 
-        let caraCard = document.getElementById(`${ficha.name}`)
+        // declaración para dar estilos dinámicamente por ID-nombre a la imagen oculta        
+        let caraCard = document.getElementById(`${ficha.id}`)
         caraCard.style.backgroundImage = "url(" + ` ${ficha.image}` + ")"
         caraCard.style.backgroundSize = "cover"
     }

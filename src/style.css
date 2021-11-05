@@ -8,6 +8,7 @@ body {
     grid-template-rows: 0.7fr 4fr 0.5fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
     background-color: #000;
+    background-size: cover;
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
@@ -41,9 +42,11 @@ footer {
     text-align: center;
     align-items: center;
     color: aliceblue;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-size: 100%;
-    padding-top: 1%;
+    padding-top: 3.5%;
+    /*background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/204180/aceef6d078c24ad92392b0ad066af923f2f96012.jpg);
+    background-size: cover;*/
 }
 
 .btn {
@@ -86,7 +89,7 @@ main {
     perspective: 1000px;
 }
 
-.card-portrait {
+.cardPortrait {
     position: relative;
     width: 100%;
     height: 100%;
@@ -94,9 +97,10 @@ main {
     transform-style: preserve-3d;
 }
 
-.card-portrait:hover {
+
+/*.cardPortrait:hover {
     transform: rotateY(180deg);
-}
+}*/
 
 .card-cover,
 .card-back {
@@ -123,5 +127,9 @@ main {
     height: 100%;
     border-radius: 10px;
     text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flipCard {
     transform: rotateY(180deg);
 }
