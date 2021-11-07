@@ -22,7 +22,7 @@ let turn = true;
 
 // Función global desde script index.html
 window.gameTest = {
-    checkMatch: (cardName, cardId) => { // booleano
+    checkMatch: (cardName, cardId) => {
         //Función voltear cartas
         let cardFlip = document.getElementById(cardId + "_flip") //carta 2
         console.log(cardName, cardId)
