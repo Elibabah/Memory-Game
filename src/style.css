@@ -3,9 +3,9 @@
 body {
     display: grid;
     width: auto;
-    height: 115vh;
+    height: 100vh;
     grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-rows: 0.7fr 4fr 0.5fr;
+    grid-template-rows: 0.7fr 4fr 2fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
     background-color: #000;
     background-size: cover;
@@ -39,25 +39,31 @@ section2 {
 
 footer {
     grid-area: footer;
-    height: 15vh;
+    height: 20vh;
     text-align: center;
     align-items: center;
     color: aliceblue;
     padding-bottom: 10%;
     font-size: 100%;
-    padding-top: 0%;
+    padding-top: 1.5%;
     line-height: 270%;
+    background-color: #000;
+    position: static;
     /*background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/204180/aceef6d078c24ad92392b0ad066af923f2f96012.jpg);
     background-size: cover;*/
 }
 
 footer .fa-heart {
     color: #F00;
+    position: absolute;
+    padding-left: 1.5%;
+    padding-top: 1%;
 }
 
 #copy {
     font-size: 50%;
-    position: relative;
+    position: absolute;
+    padding-top: 1%;
 }
 
 .btn {
@@ -85,7 +91,7 @@ main {
     flex-wrap: wrap;
     gap: 1em 1em;
     color: #000;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
 
