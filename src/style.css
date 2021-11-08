@@ -1,17 +1,40 @@
 /*------------------------------------- GRID A TODO EL DOCUMENTO -------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Spartan&display=swap');
 body {
+    background-color: #000;
+}
+
+all {
     display: grid;
     width: auto;
     height: 100vh;
     grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-rows: 0.7fr 4fr 2fr;
+    grid-template-rows: 1fr 4fr 1.7fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
-    background-color: #000;
-    background-size: cover;
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
+    background-image: url(https://images.alphacoders.com/935/thumb-1920-935315.png);
+    background-size: cover;
+}
+
+body::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+body * {
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -19,8 +42,9 @@ header {
     text-align: center;
     padding-top: 2.5%;
     padding-bottom: 1.5%;
-    background-color: transparent;
     color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    font-size: 210%;
 }
 
 section1 {
@@ -28,6 +52,7 @@ section1 {
     text-align: center;
     padding-top: 15%;
     color: aliceblue;
+    font-family: 'Spartan', sans-serif;
 }
 
 section2 {
@@ -35,22 +60,20 @@ section2 {
     text-align: center;
     padding-top: 15%;
     color: aliceblue;
+    font-family: 'Spartan', sans-serif;
 }
 
 footer {
     grid-area: footer;
-    height: 20vh;
     text-align: center;
     align-items: center;
     color: aliceblue;
-    padding-bottom: 10%;
+    padding-bottom: 1.5%;
     font-size: 100%;
-    padding-top: 1.5%;
+    padding-top: 1%;
     line-height: 270%;
-    background-color: #000;
-    position: static;
-    /*background-image: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/204180/aceef6d078c24ad92392b0ad066af923f2f96012.jpg);
-    background-size: cover;*/
+    background-color: black;
+    background-size: cover;
 }
 
 footer .fa-heart {
@@ -76,12 +99,14 @@ footer .fa-heart {
     position: absolute;
     padding-left: 12%;
     float: left;
+    padding-top: 1.5%;
 }
 
 .parvada {
     position: absolute;
     padding-left: 82%;
     float: right;
+    padding-bottom: 0%;
 }
 
 main {
