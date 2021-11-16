@@ -2,25 +2,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Merriweather&family=Roboto:wght@300&display=swap');
 body {
     background-color: #000;
 }
 
-all {
+
+/*------------------------------------------// USERS SCREEN //----------------------------------------------*/
+
+
+/*s1 {
     display: grid;
     width: auto;
     height: 100vh;
-    grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-rows: 1fr 4fr 1.7fr;
-    grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header header header" "users users users" "footer footer footer";
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
-    background-image: url(https://images.alphacoders.com/935/thumb-1920-935315.png);
+    background-image: url();
     background-size: cover;
 }
 
-body::after {
+s1::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -29,10 +34,65 @@ body::after {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
-body * {
+s1 * {
+    position: relative;
+    z-index: 1;
+}
+
+users {
+    grid-area: users;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header {
+    grid-area: header;
+}
+
+#footer-users {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+#by-users {
+    padding-bottom: 0%;
+}*/
+
+
+/*------------------------------------------// GAME SCREEN //----------------------------------------------*/
+
+all {
+    display: grid;
+    width: auto;
+    height: 133vh;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 1fr 6fr 1.7fr;
+    grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
+    padding: 0%;
+    column-gap: 0%;
+    row-gap: 0%;
+    background-image: url(https://images.alphacoders.com/935/thumb-1920-935315.png);
+    background-size: cover;
+}
+
+all::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 133vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+all * {
     position: relative;
     z-index: 1;
 }
@@ -40,67 +100,98 @@ body * {
 header {
     grid-area: header;
     text-align: center;
-    padding-top: 2.5%;
-    padding-bottom: 1.5%;
-    color: aliceblue;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: #FFF;
     font-family: 'Amatic SC', cursive;
-    font-size: 210%;
+    font-size: 275%;
 }
 
 section1 {
     grid-area: section1;
     text-align: center;
     padding-top: 15%;
-    color: aliceblue;
+    color: #FFF;
     font-family: 'Spartan', sans-serif;
+    font-size: 115%;
 }
 
 section2 {
     grid-area: section2;
     text-align: center;
     padding-top: 15%;
-    color: aliceblue;
+    color: #FFF;
     font-family: 'Spartan', sans-serif;
+    font-size: 115%;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    /*para que se enrolle a cambio de tamaño */
+    flex-wrap: wrap;
+    row-gap: 0.5em;
+    color: #000;
+    margin-bottom: 1.5%;
 }
 
 footer {
     grid-area: footer;
     text-align: center;
     align-items: center;
-    color: aliceblue;
-    padding-bottom: 1.5%;
-    font-size: 100%;
-    padding-top: 1%;
-    line-height: 270%;
+    color: #FFF;
+    padding-bottom: 0.5%;
+    font-size: 110%;
+    padding-top: 2.5%;
     background-color: black;
     background-size: cover;
+    font-family: 'Merriweather', serif;
 }
 
 footer .fa-heart {
     color: #F00;
-    position: absolute;
-    padding-left: 1.5%;
-    padding-top: 1%;
 }
 
 #copy {
     font-size: 50%;
-    position: absolute;
-    padding-top: 1%;
+}
+
+#by {
+    line-height: 180%;
+}
+
+#date {
+    font-size: 90%;
+    padding-top: 0.5%;
+}
+
+.cita {
+    padding-top: 0.5%;
+    font-style: italic;
+    font-size: 90%;
 }
 
 .btn {
     color: #0f1dcf;
-    font-size: 150%;
+    font-size: 190%;
     margin: 0 2%;
+    padding-top: 0.5%;
 }
 
 .olivo-tree {
     position: absolute;
     padding-left: 12%;
     float: left;
-    padding-top: 1.5%;
+    padding-top: 0.5%;
 }
+
+
+/*.moon {
+    position: absolute;
+    padding-left: 19%;
+    float: left;
+    padding-top: 0%;
+}*/
 
 .parvada {
     position: absolute;
@@ -109,21 +200,14 @@ footer .fa-heart {
     padding-bottom: 0%;
 }
 
-main {
-    grid-area: main;
-    display: flex;
-    /*para que se enrolle a cambio de tamaño */
-    flex-wrap: wrap;
-    gap: 1em 1em;
-    color: #000;
-    margin-bottom: 7%;
-}
-
 
 /*.responsive-img {
     max-width: 100%;
     max-height: 100%;
 }*/
+
+
+/*------------------- PLAYING CARDS ------------------------*/
 
 .card {
     display: block;
@@ -189,4 +273,43 @@ main {
 
 .flipCard {
     transform: rotateY(180deg);
+}
+
+
+/*----------------------- CONTROLS & SCORE -------------------------*/
+
+
+/*.btn-group {
+}*/
+
+#replay {
+    position: sticky;
+    margin-top: 240%;
+    border-radius: 40%;
+    border-style: none;
+    color: #f44611;
+    background-color: transparent;
+}
+
+#reset {
+    position: sticky;
+    margin-top: 0%;
+    border-radius: 40%;
+    border-style: none;
+    color: #f44611;
+    background-color: transparent;
+}
+
+#replay:hover,
+#reset:hover {
+    color: #F00;
+    background-color: transparent;
+    border-style: solid;
+}
+
+#P1,
+#P2 {
+    font-size: 280%;
+    position: absolute;
+    margin-left: 45%;
 }
