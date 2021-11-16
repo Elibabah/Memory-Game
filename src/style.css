@@ -102,7 +102,7 @@ header {
     text-align: center;
     padding-top: 2%;
     padding-bottom: 1%;
-    color: aliceblue;
+    color: #FFF;
     font-family: 'Amatic SC', cursive;
     font-size: 275%;
 }
@@ -111,7 +111,7 @@ section1 {
     grid-area: section1;
     text-align: center;
     padding-top: 15%;
-    color: aliceblue;
+    color: #FFF;
     font-family: 'Spartan', sans-serif;
     font-size: 115%;
 }
@@ -120,7 +120,7 @@ section2 {
     grid-area: section2;
     text-align: center;
     padding-top: 15%;
-    color: aliceblue;
+    color: #FFF;
     font-family: 'Spartan', sans-serif;
     font-size: 115%;
 }
