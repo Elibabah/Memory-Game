@@ -1,17 +1,23 @@
 //---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
 
-// Exportación de módulos
-export let getCardsfromAPI = (tarjetaParaBuscar) => {}
-
-
-// traer la data del JSON con un fetch
-fetch("../data/memory.json")
-    .then((response) => response.json()) // traer el json
-    .then((data) => iterarTarjetas(data)) // traer data y dar a variable
-    .catch((error) => console.log(error)) // atrapar error
-
 // variable para el área de juego
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
+
+// Exportación de módulos
+export let getCardsfromAPI = () => {;
+    console.log("resetear")
+    mazo.innerHTML = "";
+    let Player1 = "";
+    let Player2 = "";
+    document.getElementById("P1").innerHTML = Player1;
+    document.getElementById("P2").innerHTML = Player2;
+    // traer la data del JSON con un fetch
+    fetch("../data/memory.json")
+        .then((response) => response.json()) // traer el json
+        .then((data) => iterarTarjetas(data)) // traer data y dar a variable
+        .catch((error) => console.log(error)) // atrapar error
+};
+
 
 
 

@@ -3,17 +3,12 @@
 
 
 
-
-// ---------------------------------------// REGISTRO USUARIOS //----------------------------------------- //
-
-
-
 // -----------------------------------------// GAME FUNCTIONS// ------------------------------------------//
-
 
 
 // Importación de módulos. Recibe el EXPORT de data.js
 import { getCardsfromAPI } from "./data.js";
+getCardsfromAPI();
 
 let click = false; // boleano
 //declaración de funciones
@@ -25,8 +20,8 @@ let carta2;
 let id2;
 
 //contador
-let Player1 = 0;
-let Player2 = 0;
+let Player1 = "";
+let Player2 = "";
 let turn = true;
 
 
@@ -110,3 +105,7 @@ window.gameTest = {
 
     }
 }
+
+let volverJugar = document.getElementById("replay")
+
+volverJugar.addEventListener("click", getCardsfromAPI);
