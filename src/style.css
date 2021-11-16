@@ -223,14 +223,34 @@ footer .fa-heart {
 /*.btn-group {
 }*/
 
-.btn-secondary {
-    margin-top: 255%;
+#replay {
+    position: sticky;
+    margin-top: 240%;
     border-radius: 40%;
+    border-style: none;
     color: #f44611;
     background-color: transparent;
+}
+
+#reset {
+    position: sticky;
+    margin-top: 0%;
+    border-radius: 40%;
+    border-style: none;
+    color: #f44611;
+    background-color: transparent;
+}
+
+#replay:hover,
+#reset:hover {
+    color: #F00;
+    background-color: transparent;
+    border-style: solid;
 }
 
 #P1,
 #P2 {
     font-size: 280%;
+    position: absolute;
+    margin-left: 45%;
 }
