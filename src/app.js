@@ -13,9 +13,8 @@ play.addEventListener("click", () => {
     document.getElementById("game-screen").hidden = false;
 });
 
+let userName1 = document.getElementById("player01")
+userName1.innerHTML = document.getElementById("user1").value + " ";
 
-//------------- Botón replay ------------//
-
-
-
-//iterarTarjetas();
+let userName2 = document.getElementById("player02")
+userName2.innerHTML = document.getElementById("user2").value + " ";
