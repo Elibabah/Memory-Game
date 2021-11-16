@@ -14,18 +14,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!----------------------------------------------// BODY GRID //------------------------------------------------>
 
 <body>
-    <all>
-        <header class="grid-item"><img src="https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/icon.png" alt="galaxy-icon" width="25"> GALAXY MEMORY GAME</header>
+    <!----------------------------------------------// USERS SCREEN //------------------------------------------------>
+
+    <s1 id="screen-users" hidden>
+        <header></header>
+        <users></users>
+        <footer id="footer-users">
+            <!--<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="75"></div>-->
+            <div id="by-users"><i class="far fa-copyright" id="copy"></i>Elibabah! <i class="fas fa-heart"></i></div>
+            <div id="social">
+                <a href="https://github.com/Elibabah" target="_blank" class="btn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/" target="_blank" class="btn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/delias16.hernandez/" target="_blank" class="btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/ElasHer59446451" target="_blank" class="btn"><i class="fab fa-twitter"></i></a><br>
+            </div>
+            <div id="date-users">November 2021</div>
+        </footer>
+    </s1>
+
+    <!-------------------------------------------// GAME SCREEN //------------------------------------------------------>
+    <all id="game-screen">
+        <header class="grid-item"><img src="https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/icon.png" alt="galaxy-icon" width="30"> GALAXY MEMORY GAME</header>
         <section1 class="grid-item">
-            <div>Player 1</div><br>
+            <div id="player_01">Name 1</div><br>
             <p id="P1"></p>
         </section1>
         <main id="juego"></main>
         <section2 class="grid-item">
-            <div>Player 2</div><br>
+            <div id="player_02">Name 2</div><br>
             <p id="P2"></p>
             <botones id="botones">
                 <button type="button" class="btn btn-secondary" id="replay"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
@@ -42,17 +60,18 @@
             <div class="parvada"><img src="../data/assets/birds.jpg" alt="parvada" class="birds" width="80"></div>
             <!--<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="75"></div>-->
             <div class="olivo-tree"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10695191.jpg" alt="olivo-tree" class="icon-tree" width="115"></div>
-            <div id="by"><i class="far fa-copyright" id="copy"></i>Elibabah! <i class="fas fa-heart"></i><br>
-                <div id="social">
-                    <a href="https://github.com/Elibabah" target="_blank" class="btn"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/" target="_blank" class="btn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/delias16.hernandez/" target="_blank" class="btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/ElasHer59446451" target="_blank" class="btn"><i class="fab fa-twitter"></i></a><br>
-                </div><br>
-                <div class="cita">Un murmullo de pájaros protegerá tu vuelta a casa</div>
-                <div id="date">November 2021</div>
+            <div id="by"><i class="far fa-copyright" id="copy"></i>Elibabah! <i class="fas fa-heart"></i></div><br>
+            <div id="social">
+                <a href="https://github.com/Elibabah" target="_blank" class="btn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/elías-hernández-elibabah-5b85b5100/" target="_blank" class="btn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/delias16.hernandez/" target="_blank" class="btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/ElasHer59446451" target="_blank" class="btn"><i class="fab fa-twitter"></i></a><br>
+            </div><br>
+            <div class="cita">Un murmullo de pájaros protegerá tu vuelta a casa</div>
+            <div id="date">November 2021</div>
         </footer>
     </all>
+
     <!----------------------------------// CONEXIÓN MODULAR SCRIPT //----------------------------------------->
     <script src="index.js" type="module"></script>
     |
