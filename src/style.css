@@ -10,7 +10,7 @@ body {
 all {
     display: grid;
     width: auto;
-    height: 130vh;
+    height: 133vh;
     grid-template-columns: 0.5fr 4fr 0.5fr;
     grid-template-rows: 1fr 6fr 1.7fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
@@ -25,7 +25,7 @@ all::after {
     content: "";
     background-color: black;
     position: absolute;
-    height: 130vh;
+    height: 133vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -54,6 +54,7 @@ section1 {
     padding-top: 15%;
     color: aliceblue;
     font-family: 'Spartan', sans-serif;
+    font-size: 115%;
 }
 
 section2 {
@@ -62,6 +63,7 @@ section2 {
     padding-top: 15%;
     color: aliceblue;
     font-family: 'Spartan', sans-serif;
+    font-size: 115%;
 }
 
 main {
@@ -212,4 +214,23 @@ footer .fa-heart {
 
 .flipCard {
     transform: rotateY(180deg);
+}
+
+
+/*--------------------------------------------------- CONTROLS & SCORE ------------------------------------------------*/
+
+
+/*.btn-group {
+}*/
+
+.btn-secondary {
+    margin-top: 255%;
+    border-radius: 40%;
+    color: #f44611;
+    background-color: transparent;
+}
+
+#P1,
+#P2 {
+    font-size: 280%;
 }

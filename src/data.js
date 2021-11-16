@@ -15,11 +15,6 @@ let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá l
 
 
 
-
-
-
-
-
 // variable para el área de tarjetas
 let iterarTarjetas = (data) => { // iterar el objeto
     console.log(data.memory_Game) // consologuear el data del JSON
