@@ -15,8 +15,6 @@ let turn = true;
 
 
 
-
-
 // Objeto global desde HTML
 window.gameTest = {
     checkMatch: (cardName, cardId) => {
@@ -93,24 +91,10 @@ window.gameTest = {
                 id2 = null;
             }
         }
-    },
-
-
-
-    /*    replay: () => {
-
-
-
-            export let scoreReplay = () => {
-                let Player1 = "";
-                let Player2 = "";
-                let turn = true;
-            }
-        }
-    */
+    }
 }
 
-//gameTest.replayScore()
+//-------------- Función replay limpiar puntajes ---------------//
 
 export let replayScore = () => {
     console.log("inicia replay: ", Player1, Player2)

@@ -1,10 +1,9 @@
 import { getCardsfromAPI } from "./data.js"; //Importación de módulos. Recibe el EXPORT de data.js
 getCardsfromAPI();
 
-// -----------------------------------------// GAME FUNCTIONS// ------------------------------------------//
 
 
-//-------------- Botón entrar ----------//
+//------------------- ENTRY BUTTON ----------------//
 let play = document.getElementById("entry")
 
 play.addEventListener("click", () => {
@@ -17,12 +16,21 @@ play.addEventListener("click", () => {
 
     let userName2 = document.getElementById("player02")
     userName2.innerHTML = document.getElementById("user2").value + " ";
-
 });
 
 
-//----------------- REPLAY BOTÓN ------------------//
+//----------------- REPLAY BUTTON ------------------//
 
 let volverJugar = document.getElementById("replay")
 
 volverJugar.addEventListener("click", getCardsfromAPI);
+
+
+// -------------- RESET BUTTON ---------------------//
+
+let reset = document.getElementById("reset")
+
+reset.addEventListener("click", () => {
+    location.reload();
+});
+reset()

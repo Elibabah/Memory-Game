@@ -2,7 +2,6 @@ import { replayScore } from "./app.js"
 
 console.log(replayScore)
 
-//---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
 
 // variable para el área de juego
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
@@ -10,9 +9,9 @@ let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá l
 
 export let getCardsfromAPI = () => {
     console.log("resetear")
-    mazo.innerHTML = ""; // resetar cartas
+    mazo.innerHTML = ""; // limpiar cartas
 
-    replayScore() //Resetear Score
+    replayScore() // activar función Resetear Score
 
 
     // traer la data del JSON con un fetch
