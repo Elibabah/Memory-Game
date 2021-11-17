@@ -37,7 +37,7 @@ window.gameTest = {
             id1 = cardId
             click = true;
             console.log("primer click a " + carta1 + " " + id1)
-            sounds() //sonido al giro
+            soundGiro() //sonido al giro
 
         } else {
             //segundo click con otra carta y su valor, carta 2 y valor 2
@@ -45,10 +45,12 @@ window.gameTest = {
             id2 = cardId
             click = false;
             console.log("segundo click a: " + carta2 + " " + id2)
-            sounds() //sonido al giro
-
-            //Comparar si la carta1 == carta2 es un match
+            soundGiro() //sonido al giro
+                //Comparar si la carta1 == carta2 es un match
             console.log(carta1)
+
+            //------------ MATCH vs NO MATCH --------------------------//
+
             if (carta1 == carta2 && id1 != id2) { // match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
@@ -81,10 +83,12 @@ window.gameTest = {
 
             } else {
                 console.log("no es match")
-                    //Set time out para devolver cartas
+
+                //Set time out para devolver cartas
                 setTimeout(() => {
                     cardFlip.style.transform = ""; //volver carta2
                     cardFlip1.style.transform = ""; //volver carta1
+                    soundVolver() // sonido devolver cartas
                 }, 1010); // tiempo del setTimeout
 
                 // limpiar valores
@@ -108,10 +112,18 @@ export let replayScore = () => {
     document.getElementById("P2").innerHTML = Player2;
 };
 
-// ----------- Función sonidos-------------------//
+// ---------------------- Función sonidos -----------------------//
 
-let sounds = () => {
+//-- Función sonido al giro --//
+let soundGiro = () => {
     let girar = document.getElementById("girar")
     girar.play()
     girar.volume = 1
+};
+
+//-- Función sonido al volver card --//
+let soundVolver = () => {
+    let devolver = document.getElementById("devolver")
+    devolver.play()
+    devolver.volume = 1
 };
