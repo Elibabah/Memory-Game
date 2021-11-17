@@ -10,14 +10,13 @@ body {
 
 /*------------------------------------------// USERS SCREEN //----------------------------------------------*/
 
-
-/*s1 {
+s1 {
     display: grid;
     width: auto;
     height: 100vh;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: "header header header" "users users users" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: "header header header" "controls controls controls" "footer footer footer";
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
@@ -42,26 +41,21 @@ s1 * {
     z-index: 1;
 }
 
-users {
-    grid-area: users;
-}
-
-footer {
-    grid-area: footer;
-}
-
 header {
     grid-area: header;
 }
 
 #footer-users {
-    padding-top: 0%;
-    padding-bottom: 0%;
+    font-size: 85%;
 }
 
-#by-users {
-    padding-bottom: 0%;
-}*/
+controls {
+    grid-area: controls;
+}
+
+footer {
+    grid-area: footer;
+}
 
 
 /*------------------------------------------// GAME SCREEN //----------------------------------------------*/
