@@ -15,7 +15,7 @@ s1 {
     width: auto;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 0.5fr;
     grid-template-areas: "header header header" "controls controls controls" "footer footer footer";
     padding: 0%;
     column-gap: 0%;
@@ -46,7 +46,9 @@ header {
 }
 
 #footer-users {
-    font-size: 85%;
+    font-size: 80%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 controls {
@@ -55,6 +57,41 @@ controls {
 
 footer {
     grid-area: footer;
+}
+
+.welcome {
+    font-size: 120%;
+}
+
+.advertencia {
+    font-size: 80%;
+}
+
+.usuario1 {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.usuario2 {
+    display: block;
+    margin: auto;
+}
+
+.entrar {
+    display: block;
+    margin: auto;
+    background-color: #0f1dcf;
+    border-radius: 50%;
+    padding: 0.8%;
+}
+
+.usuario1::placeholder {
+    text-align: center;
+}
+
+.usuario2::placeholder {
+    text-align: center;
 }
 
 
@@ -134,7 +171,7 @@ footer {
     text-align: center;
     align-items: center;
     color: #FFF;
-    padding-bottom: 0.5%;
+    padding-bottom: 2%;
     font-size: 110%;
     padding-top: 2.5%;
     background-color: black;
