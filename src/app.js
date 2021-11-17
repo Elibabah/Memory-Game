@@ -37,12 +37,15 @@ window.gameTest = {
             id1 = cardId
             click = true;
             console.log("primer click a " + carta1 + " " + id1)
+            sounds() //sonido al giro
+
         } else {
             //segundo click con otra carta y su valor, carta 2 y valor 2
             carta2 = cardName
             id2 = cardId
             click = false;
             console.log("segundo click a: " + carta2 + " " + id2)
+            sounds() //sonido al giro
 
             //Comparar si la carta1 == carta2 es un match
             console.log(carta1)
@@ -103,4 +106,12 @@ export let replayScore = () => {
     console.log("OK limpiar score")
     document.getElementById("P1").innerHTML = Player1;
     document.getElementById("P2").innerHTML = Player2;
-}
+};
+
+// ----------- Función sonidos-------------------//
+
+let sounds = () => {
+    let girar = document.getElementById("girar")
+    girar.play()
+    girar.volume = 1
+};
