@@ -91,6 +91,18 @@ footer {
     border-style: hidden;
 }
 
+.entrar:hover {
+    display: block;
+    margin: auto;
+    background-color: #f44611;
+    border-radius: 50%;
+    margin-top: 1%;
+    font-size: 100%;
+    color: #FFF;
+    padding: 1.8%;
+    border-style: hidden;
+}
+
 .usuario1::placeholder {
     text-align: center;
 }
