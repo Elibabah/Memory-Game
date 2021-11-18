@@ -72,12 +72,14 @@ window.gameTest = {
                     Player1++;
                     console.log(Player1)
                     document.getElementById("P1").innerHTML = Player1;
+                    winner(Player1, Player2) // activar función ganador
                 } else {
                     console.log("turno Jugador 1");
                     turn = true;
                     Player2++;
                     console.log(Player2);
                     document.getElementById("P2").innerHTML = Player2;
+                    winner(Player1, Player2) // activar función ganador
                 }
                 //Meter aquí función de sonido
 
@@ -114,7 +116,7 @@ export let replayScore = () => {
 
 // ---------------------- Función sonidos -----------------------//
 
-//-- Función sonido al giro --//
+//------ Función sonido al giro -----//
 let soundGiro = () => {
     let girar = document.getElementById("girar")
     girar.play()
@@ -127,3 +129,30 @@ let soundVolver = () => {
     devolver.play()
     devolver.volume = 1
 };
+
+
+
+//------------ Funciones ganador ------------//
+
+let winner = (Player1, Player2) => {
+    setTimeout(() => {
+            if (Player1 + Player2 == 9) {
+                if (Player1 > Player2) {
+                    //stopFondo(); Detener música fondo
+                    //playwinner(); Música ganador
+                    alert("Felicidades, " + document.getElementById("user1").value);
+                } else {
+                    if (Player1 > Player2) {
+                        //stopFondo();
+                        //playwinner();
+                        alert("Felicidades, " + document.getElementById('user2').value)
+                    } else {
+                        //stopFondo();
+                        //playEmpate();
+                        alert("Empataron")
+                    }
+                }
+            }
+        },
+        200)
+}
