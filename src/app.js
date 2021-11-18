@@ -178,12 +178,14 @@ let soundInterstellar = () => {
     ticToc.volume = 0.2
 };
 
-let stopsoundInterstellar = () => {
+export let stopsoundInterstellar = () => {
     let gameOver = document.getElementById("fondo")
     gameOver.pause()
     gameOver.currentTime = 0;
     gameOver.currenTime = 0;
 }
+
+
 
 
 //------------ Funciones ganador ------------//

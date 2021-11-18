@@ -3,6 +3,10 @@ import { replayScore } from "./app.js"
 console.log(replayScore)
 
 
+import { stopsoundInterstellar } from "./app.js"
+
+console.log(stopsoundInterstellar)
+
 // variable para el área de juego
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
     // Exportación de módulos
@@ -12,7 +16,7 @@ export let getCardsfromAPI = () => {
     mazo.innerHTML = ""; // limpiar cartas
 
     replayScore() // activar función Resetear Score
-
+    stopsoundInterstellar()
 
     // traer la data del JSON con un fetch
     fetch("../data/memory.json")
