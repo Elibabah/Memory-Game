@@ -73,7 +73,7 @@ footer {
 .usuario1 {
     display: block;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 9%;
 }
 
 .usuario2 {
@@ -86,7 +86,9 @@ footer {
     margin: auto;
     background-color: #0f1dcf;
     border-radius: 50%;
-    padding: 0.8%;
+    margin-top: 1%;
+    padding: 1.5%;
+    border-style: hidden;
 }
 
 .usuario1::placeholder {
@@ -95,6 +97,15 @@ footer {
 
 .usuario2::placeholder {
     text-align: center;
+}
+
+.cohete {
+    display: block;
+    margin: auto;
+    position: absolute;
+    float: left;
+    margin-left: 5%;
+    padding-top: 0%;
 }
 
 
@@ -246,8 +257,8 @@ footer .fa-heart {
 .card {
     display: block;
     margin: auto;
-    width: 12em;
-    height: 12em;
+    width: 11em;
+    height: 11em;
     border-radius: 10px;
     justify-content: center;
     align-content: center;
@@ -258,8 +269,8 @@ footer .fa-heart {
 .card-container {
     display: block;
     margin: auto;
-    height: 12em;
-    width: 12em;
+    height: 11em;
+    width: 11em;
     background-color: transparent;
     perspective: 1000px;
 }
