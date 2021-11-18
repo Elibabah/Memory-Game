@@ -191,7 +191,7 @@ let winner = (Player1, Player2) => {
                         setTimeout(() => {
                             document.getElementById("juego").innerHTML += `<h2 id='mensajeGanador1'>Hiciste un gran trabajo</h2>`
                         }, 780);
-                    }, 650);
+                    }, 700);
                 } else {
                     if (Player1 < Player2) {
                         //stopFondo();
@@ -221,7 +221,7 @@ let winner = (Player1, Player2) => {
                             setTimeout(() => {
                                 document.getElementById("juego").innerHTML += `<h2 id='mensajeEmpate'>Juntos siempre es mejor</h2>`
                             }, 780);
-                        }, 650);
+                        }, 700);
                     }
                 }
             }

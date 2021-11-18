@@ -100,7 +100,7 @@ footer {
 all {
     display: grid;
     width: auto;
-    height: 133vh;
+    height: 138vh;
     grid-template-columns: 0.5fr 4fr 0.5fr;
     grid-template-rows: 1fr 6fr 1.7fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
@@ -115,7 +115,7 @@ all::after {
     content: "";
     background-color: black;
     position: absolute;
-    height: 133vh;
+    height: 138vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -243,8 +243,8 @@ footer .fa-heart {
 .card {
     display: block;
     margin: auto;
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
     border-radius: 10px;
     justify-content: center;
     align-content: center;
@@ -255,8 +255,8 @@ footer .fa-heart {
 .card-container {
     display: block;
     margin: auto;
-    height: 10em;
-    width: 10em;
+    height: 11em;
+    width: 11em;
     background-color: transparent;
     perspective: 1000px;
 }
