@@ -357,7 +357,7 @@ footer .fa-heart {
     font-family: 'Amatic SC', cursive;
     font-size: 500%;
     position: relative;
-    margin-left: 10%;
+    margin-left: 11%;
 }
 
 #mensajeGanador1,
@@ -372,7 +372,7 @@ footer .fa-heart {
 }
 
 .moon {
-    margin-left: 17%;
+    margin-left: 12%;
     float: left;
     margin-top: 1%;
 }

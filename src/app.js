@@ -58,7 +58,7 @@ window.gameTest = {
 
                 setTimeout(() => {
                     soundMatch()
-                }, 1010); // tiempo del setTimeout
+                }, 1000); // tiempo del setTimeout
                 // Limpiar valores
                 carta1 = null;
                 id1 = null;
@@ -162,6 +162,14 @@ let soundMatch = () => {
     match.volume = 0.3
 };
 
+//---- Función sonido Ganador ----//
+let soundWinner = () => {
+    let youWinner = document.getElementById("win")
+    youWinner.play()
+    youWinner.volume = 0.7
+};
+
+
 
 
 //------------ Funciones ganador ------------//
@@ -171,36 +179,43 @@ let winner = (Player1, Player2) => {
             if (Player1 + Player2 == 9) {
                 if (Player1 > Player2) {
                     //stopFondo(); Detener música fondo
-                    //playwinner(); Música ganador
 
 
                     setTimeout(() => {
+
+                        soundWinner() // Música ganador1
+
                         document.getElementById("juego").innerHTML = `<h1 id='ganador1'>Congratulations, ${document.getElementById('user1').value}!...</h1>` +
-                            `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                            `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="55"></div>` +
                             `<h2 id='mensajeGanador1'>Hiciste un gran trabajo</h2>`
 
-                    }, 1000);
+                    }, 650);
                 } else {
                     if (Player1 < Player2) {
                         //stopFondo();
-                        //playwinner();
 
                         setTimeout(() => {
+
+                            soundWinner() // Música ganador1
+
                             document.getElementById("juego").innerHTML = `<h1 id='ganador2'>Congratulations, ${document.getElementById('user2').value}!...</h1>` +
-                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="55"></div>` +
                                 `<h2 id='mensajeGanador2'>No te detengas</h2>`
 
-                        }, 1010);
+                        }, 650);
 
                     } else {
                         //stopFondo();
                         //playEmpate();
                         setTimeout(() => {
+
+                            soundWinner() // Música ganador1
+
                             document.getElementById("juego").innerHTML = `<h1 id='empate'>Dead heat!...</h1>` +
-                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="55"></div>` +
                                 `<h2 id='mensajeEmpate'>Juntos siempre es mejor</h2>`
 
-                        }, 1010);
+                        }, 650);
                     }
                 }
             }
