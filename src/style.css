@@ -243,8 +243,8 @@ footer .fa-heart {
 .card {
     display: block;
     margin: auto;
-    width: 11em;
-    height: 11em;
+    width: 12em;
+    height: 12em;
     border-radius: 10px;
     justify-content: center;
     align-content: center;
@@ -255,8 +255,8 @@ footer .fa-heart {
 .card-container {
     display: block;
     margin: auto;
-    height: 11em;
-    width: 11em;
+    height: 12em;
+    width: 12em;
     background-color: transparent;
     perspective: 1000px;
 }
