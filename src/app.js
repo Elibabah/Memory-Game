@@ -178,6 +178,7 @@ let soundInterstellar = () => {
     ticToc.volume = 0.2
 };
 
+//----- Función stop sonido de fondo ------//
 export let stopsoundInterstellar = () => {
     let gameOver = document.getElementById("fondo")
     gameOver.pause()

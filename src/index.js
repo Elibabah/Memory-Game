@@ -39,3 +39,14 @@ reset.addEventListener("click", () => {
     location.reload();
 });
 reset()
+
+
+// ------- sonido hover cartas --------------- //
+/*let seleccionar = document.getElementsByClassName(".card-cover")
+
+seleccionar.addEventListener("hover", () => {
+    let sobrevolar = document.getElementById("")
+    sobrevolar.play()
+    ticToc.volume = 1
+});
+seleccionar()*/
