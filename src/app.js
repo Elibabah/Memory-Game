@@ -15,6 +15,7 @@ let turn = true;
 
 
 
+
 // Objeto global desde HTML
 window.gameTest = {
     checkMatch: (cardName, cardId) => {
@@ -55,6 +56,9 @@ window.gameTest = {
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
 
+                setTimeout(() => {
+                    soundMatch()
+                }, 1010); // tiempo del setTimeout
                 // Limpiar valores
                 carta1 = null;
                 id1 = null;
@@ -72,13 +76,22 @@ window.gameTest = {
                     Player1++;
                     console.log(Player1)
                     document.getElementById("P1").innerHTML = Player1;
-                    winner(Player1, Player2) // activar función ganador
+                    //document.getElementById("player1").style.color = "#fff";
+                    //document.getElementById("player2").style.color = "#E36477";
+
+                    setTimeout(() => {
+                        winner(Player1, Player2) // activar función ganador
+                    }, 1010);
+
+
                 } else {
                     console.log("turno Jugador 1");
                     turn = true;
                     Player2++;
                     console.log(Player2);
                     document.getElementById("P2").innerHTML = Player2;
+                    //document.getElementById("player1").style.color = "#E36477";
+                    //document.getElementById("player2").style.color = "#fff";
                     winner(Player1, Player2) // activar función ganador
                 }
                 //Meter aquí función de sonido
@@ -98,6 +111,18 @@ window.gameTest = {
                 id1 = null;
                 carta2 = null;
                 id2 = null;
+
+                if (turn) {
+                    console.log("turno player2");
+                    turn = false;
+                    //document.getElementById("player1").style.color = "#fff";
+                    //document.getElementById("player2").style.color = "#E36477";
+                } else {
+                    console.log("turno player1");
+                    turn = true;
+                    //document.getElementById("player1").style.color = "#E36477";
+                    //document.getElementById("player2").style.color = "#fff";
+                }
             }
         }
     }
@@ -130,6 +155,13 @@ let soundVolver = () => {
     devolver.volume = 1
 };
 
+//---- Función sonido al catch ----//
+let soundMatch = () => {
+    let match = document.getElementById("match")
+    match.play()
+    match.volume = 0.3
+};
+
 
 
 //------------ Funciones ganador ------------//
@@ -140,16 +172,35 @@ let winner = (Player1, Player2) => {
                 if (Player1 > Player2) {
                     //stopFondo(); Detener música fondo
                     //playwinner(); Música ganador
-                    alert("Felicidades, " + document.getElementById("user1").value);
+
+
+                    setTimeout(() => {
+                        document.getElementById("juego").innerHTML = `<h1 id='ganador1'>Congratulations, ${document.getElementById('user1').value}!...</h1>` +
+                            `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                            `<h2 id='mensajeGanador1'>Hiciste un gran trabajo</h2>`
+
+                    }, 1000);
                 } else {
-                    if (Player1 > Player2) {
+                    if (Player1 < Player2) {
                         //stopFondo();
                         //playwinner();
-                        alert("Felicidades, " + document.getElementById('user2').value)
+
+                        setTimeout(() => {
+                            document.getElementById("juego").innerHTML = `<h1 id='ganador2'>Congratulations, ${document.getElementById('user2').value}!...</h1>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                                `<h2 id='mensajeGanador2'>No te detengas</h2>`
+
+                        }, 1010);
+
                     } else {
                         //stopFondo();
                         //playEmpate();
-                        alert("Empataron")
+                        setTimeout(() => {
+                            document.getElementById("juego").innerHTML = `<h1 id='empate'>Dead heat!...</h1>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="60"></div>` +
+                                `<h2 id='mensajeEmpate'>Juntos siempre es mejor</h2>`
+
+                        }, 1010);
                     }
                 }
             }

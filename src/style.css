@@ -344,3 +344,35 @@ footer .fa-heart {
     position: absolute;
     margin-left: 45%;
 }
+
+
+/*-------------------- GANADOR ----------------------------*/
+
+#ganador1,
+#ganador2,
+#empate {
+    text-align: center;
+    margin-top: 6%;
+    color: #FFF;
+    font-family: 'Amatic SC', cursive;
+    font-size: 500%;
+    position: relative;
+    margin-left: 10%;
+}
+
+#mensajeGanador1,
+#mensajeGanador2,
+#mensajeEmpate {
+    margin-top: 0%;
+    color: #FFF;
+    font-family: 'Amatic SC', cursive;
+    font-size: 350%;
+    position: relative;
+    margin-left: 45%;
+}
+
+.moon {
+    margin-left: 17%;
+    float: left;
+    margin-top: 1%;
+}
