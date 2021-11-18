@@ -20,17 +20,19 @@
 
     <s1 id="screen-users">
         <header>
-            <h1>Prepare your trip</h1>
-            <p>Rememeber: Do not go gentle into that good night</p>
+            <h1 class="welcome">Prepare your trip</h1>
+            <p class="advertencia">and rememeber: "Do not go gentle into that good night"</p>
         </header>
 
         <controls>
+            <div class="cohete"><img src="../data/assets/cohete-pilotos.png" alt="cohete" class="cohete" width="300"></div>
+
             <users>
-                <input id="user1" type="text" placeholder="Pilot 1" class="">
-                <input id="user2" type="text" placeholder="Pilot 2" class="">
-            </users>
+                <input id="user1" type="text" placeholder="Pilot 1" class="usuario1"><br>
+                <input id="user2" type="text" placeholder="Pilot 2" class="usuario2">
+            </users><br><br>
             <fly>
-                <button type="button" id="entry">FLY</button>
+                <button type="button" id="entry" class="entrar">GO</button>
             </fly>
         </controls>
 
@@ -50,12 +52,12 @@
     <all hidden id="game-screen">
         <header class="grid-item"><img src="https://raw.githubusercontent.com/Elibabah/Memory-Game/development/data/assets/icon.png" alt="galaxy-icon" width="30"> GALAXY MEMORY GAME</header>
         <section1 class="grid-item">
-            <div id="player01">Name 1</div><br>
+            <div id="player01"></div><br>
             <p id="P1"></p>
         </section1>
         <main id="juego"></main>
         <section2 class="grid-item">
-            <div id="player02">Name 2</div><br>
+            <div id="player02"></div><br>
             <p id="P2"></p>
             <botones id="botones">
                 <button type="button" class="btn btn-secondary" id="replay"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
@@ -71,7 +73,7 @@
         <footer class="grid-item">
             <div class="parvada"><img src="../data/assets/birds.jpg" alt="parvada" class="birds" width="80"></div>
             <!--<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="75"></div>-->
-            <div class="olivo-tree"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10695191.jpg" alt="olivo-tree" class="icon-tree" width="115"></div>
+            <div class="olivo-tree"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10695191.jpg" alt="olivo-tree" class="icon-tree" width="135"></div>
             <div id="by"><i class="far fa-copyright" id="copy"></i>Elibabah! <i class="fas fa-heart"></i></div><br>
             <div id="social">
                 <a href="https://github.com/Elibabah" target="_blank" class="btn"><i class="fab fa-github"></i></a>
@@ -83,6 +85,15 @@
             <div id="date">November 2021</div>
         </footer>
     </all>
+
+
+    <!------------------------------------------// AUDIO FILES //-------------------------------------------->
+    <audio id="girar" src="../data/assets/game-sounds/girar.mp3"></audio>
+    <audio id="devolver" src="../data/assets/game-sounds/devolver.mp3"></audio>
+    <audio id="match" src="../data/assets/game-sounds/match.mp3"></audio>
+    <audio id="win" src="../data/assets/game-sounds/ganador.mp3"></audio>
+    <audio id="fondo" src="../data/assets/game-sounds/interstellar.mp3"></audio>
+
 
     <!----------------------------------// CONEXIÓN MODULAR SCRIPT //----------------------------------------->
     <script src="index.js" type="module"></script>

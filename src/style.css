@@ -15,12 +15,15 @@ s1 {
     width: auto;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 0.5fr;
     grid-template-areas: "header header header" "controls controls controls" "footer footer footer";
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
-    background-image: url();
+    /*background-image: url(https://static.vix.com/es/sites/default/files/styles/4x3/public/btg/curiosidades.batanga.com/files/8-cosas-sobre-Saturno-que-quiza-no-sabias.jpg);*/
+    /*background-image: url(https://www.elboletin.com/wp-content/uploads/2018/06/www.elboletin.com_fotos_1_104372_astronauta.jpg);*/
+    background-image: url(https://revistamyt.com/wp-content/uploads/2021/04/tierra1.jpeg);
+    /*background-image: url(https://media.traveler.es/photos/61376156d7c7024f9175de6d/master/pass/205153.jpg);*/
     background-size: cover;
 }
 
@@ -33,7 +36,7 @@ s1::after {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 s1 * {
@@ -46,7 +49,9 @@ header {
 }
 
 #footer-users {
-    font-size: 85%;
+    font-size: 80%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 controls {
@@ -57,13 +62,59 @@ footer {
     grid-area: footer;
 }
 
+.welcome {
+    font-size: 120%;
+}
+
+.advertencia {
+    font-size: 80%;
+}
+
+.usuario1 {
+    display: block;
+    margin: auto;
+    margin-top: 9%;
+}
+
+.usuario2 {
+    display: block;
+    margin: auto;
+}
+
+.entrar {
+    display: block;
+    margin: auto;
+    background-color: #0f1dcf;
+    border-radius: 50%;
+    margin-top: 1%;
+    padding: 1.5%;
+    border-style: hidden;
+}
+
+.usuario1::placeholder {
+    text-align: center;
+}
+
+.usuario2::placeholder {
+    text-align: center;
+}
+
+.cohete {
+    display: block;
+    margin: auto;
+    position: absolute;
+    float: left;
+    margin-left: 5%;
+    padding-top: 0%;
+}
+
 
 /*------------------------------------------// GAME SCREEN //----------------------------------------------*/
 
 all {
     display: grid;
     width: auto;
-    height: 133vh;
+    height: 138vh;
     grid-template-columns: 0.5fr 4fr 0.5fr;
     grid-template-rows: 1fr 6fr 1.7fr;
     grid-template-areas: "header header header" "section1 main section2" "footer footer footer";
@@ -78,7 +129,7 @@ all::after {
     content: "";
     background-color: black;
     position: absolute;
-    height: 133vh;
+    height: 138vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -134,7 +185,7 @@ footer {
     text-align: center;
     align-items: center;
     color: #FFF;
-    padding-bottom: 0.5%;
+    padding-bottom: 2%;
     font-size: 110%;
     padding-top: 2.5%;
     background-color: black;
@@ -156,7 +207,7 @@ footer .fa-heart {
 
 #date {
     font-size: 90%;
-    padding-top: 0.5%;
+    padding-top: 1.1%;
 }
 
 .cita {
@@ -206,8 +257,8 @@ footer .fa-heart {
 .card {
     display: block;
     margin: auto;
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
     border-radius: 10px;
     justify-content: center;
     align-content: center;
@@ -218,8 +269,8 @@ footer .fa-heart {
 .card-container {
     display: block;
     margin: auto;
-    height: 10em;
-    width: 10em;
+    height: 11em;
+    width: 11em;
     background-color: transparent;
     perspective: 1000px;
 }
@@ -306,4 +357,36 @@ footer .fa-heart {
     font-size: 280%;
     position: absolute;
     margin-left: 45%;
+}
+
+
+/*-------------------- GANADOR ----------------------------*/
+
+#ganador1,
+#ganador2,
+#empate {
+    text-align: center;
+    margin-top: 6%;
+    color: #FFF;
+    font-family: 'Amatic SC', cursive;
+    font-size: 500%;
+    position: relative;
+    margin-left: 11%;
+}
+
+#mensajeGanador1,
+#mensajeGanador2,
+#mensajeEmpate {
+    margin-top: 0%;
+    color: #FFF;
+    font-family: 'Amatic SC', cursive;
+    font-size: 350%;
+    position: relative;
+    margin-left: 45%;
+}
+
+.moon {
+    margin-left: 12%;
+    float: left;
+    margin-top: 1%;
 }

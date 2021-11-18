@@ -1,7 +1,11 @@
 import { getCardsfromAPI } from "./data.js"; //Importación de módulos. Recibe el EXPORT de data.js
 getCardsfromAPI();
 
+/*let color1 = document.getElementById("player1")
+let color2 = document.getElementById("player2")
 
+color1.style.color = "#E36477";
+color2.style.color = "#E36477";*/
 
 //------------------- ENTRY BUTTON ----------------//
 let play = document.getElementById("entry")
@@ -9,6 +13,7 @@ let play = document.getElementById("entry")
 play.addEventListener("click", () => {
     document.getElementById("screen-users").hidden = true;
     document.getElementById("game-screen").hidden = false;
+
 
     //----------- Registro usuarios -----------//
     let userName1 = document.getElementById("player01")

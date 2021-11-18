@@ -15,6 +15,7 @@ let turn = true;
 
 
 
+
 // Objeto global desde HTML
 window.gameTest = {
     checkMatch: (cardName, cardId) => {
@@ -28,8 +29,8 @@ window.gameTest = {
         cardFlip.style.transform = "rotateY(180deg)" // Efecto de volteo
         console.log(cardName, cardId)
 
-
-        //------------ funciones de matching cards -----------//
+        soundInterstellar() // Activar función sonido de fondo
+            //------------ funciones de matching cards -----------//
 
         if (click == false) { //guardar datos en variable booleano para 2 click true false
             //primer click con una carta1 y valor1
@@ -37,19 +38,27 @@ window.gameTest = {
             id1 = cardId
             click = true;
             console.log("primer click a " + carta1 + " " + id1)
+            soundGiro() //sonido al giro
+
         } else {
             //segundo click con otra carta y su valor, carta 2 y valor 2
             carta2 = cardName
             id2 = cardId
             click = false;
             console.log("segundo click a: " + carta2 + " " + id2)
-
-            //Comparar si la carta1 == carta2 es un match
+            soundGiro() //sonido al giro
+                //Comparar si la carta1 == carta2 es un match
             console.log(carta1)
+
+            //------------ MATCH vs NO MATCH --------------------------//
+
             if (carta1 == carta2 && id1 != id2) { // match en el mismo nombre pero con diferente id
                 // comparar si la carta1 == carta2 es un match
                 console.log("es un match")
 
+                setTimeout(() => {
+                    soundMatch()
+                }, 1000); // tiempo del setTimeout
                 // Limpiar valores
                 carta1 = null;
                 id1 = null;
@@ -67,21 +76,34 @@ window.gameTest = {
                     Player1++;
                     console.log(Player1)
                     document.getElementById("P1").innerHTML = Player1;
+                    //document.getElementById("player1").style.color = "#fff";
+                    //document.getElementById("player2").style.color = "#E36477";
+
+                    setTimeout(() => {
+                        winner(Player1, Player2) // activar función ganador
+                    }, 1010);
+
+
                 } else {
                     console.log("turno Jugador 1");
                     turn = true;
                     Player2++;
                     console.log(Player2);
                     document.getElementById("P2").innerHTML = Player2;
+                    //document.getElementById("player1").style.color = "#E36477";
+                    //document.getElementById("player2").style.color = "#fff";
+                    winner(Player1, Player2) // activar función ganador
                 }
                 //Meter aquí función de sonido
 
             } else {
                 console.log("no es match")
-                    //Set time out para devolver cartas
+
+                //Set time out para devolver cartas
                 setTimeout(() => {
                     cardFlip.style.transform = ""; //volver carta2
                     cardFlip1.style.transform = ""; //volver carta1
+                    soundVolver() // sonido devolver cartas
                 }, 1010); // tiempo del setTimeout
 
                 // limpiar valores
@@ -89,6 +111,18 @@ window.gameTest = {
                 id1 = null;
                 carta2 = null;
                 id2 = null;
+
+                if (turn) {
+                    console.log("turno player2");
+                    turn = false;
+                    //document.getElementById("player1").style.color = "#fff";
+                    //document.getElementById("player2").style.color = "#E36477";
+                } else {
+                    console.log("turno player1");
+                    turn = true;
+                    //document.getElementById("player1").style.color = "#E36477";
+                    //document.getElementById("player2").style.color = "#fff";
+                }
             }
         }
     }
@@ -103,4 +137,111 @@ export let replayScore = () => {
     console.log("OK limpiar score")
     document.getElementById("P1").innerHTML = Player1;
     document.getElementById("P2").innerHTML = Player2;
+};
+
+// ---------------------- Función sonidos -----------------------//
+
+//------ Función sonido al giro -----//
+let soundGiro = () => {
+    let girar = document.getElementById("girar")
+    girar.play()
+    girar.volume = 1
+};
+
+//-- Función sonido al volver card --//
+let soundVolver = () => {
+    let devolver = document.getElementById("devolver")
+    devolver.play()
+    devolver.volume = 1
+};
+
+//---- Función sonido al catch ----//
+let soundMatch = () => {
+    let match = document.getElementById("match")
+    match.play()
+    match.volume = 0.3
+};
+
+//---- Función sonido Ganador ----//
+let soundWinner = () => {
+    let youWinner = document.getElementById("win")
+    youWinner.play()
+    youWinner.volume = 0.7
+};
+
+
+//---- Función sonido de fondo ----//
+let soundInterstellar = () => {
+    let ticToc = document.getElementById("fondo")
+    ticToc.play()
+    ticToc.loop = true;
+    ticToc.volume = 0.2
+};
+
+let stopsoundInterstellar = () => {
+    let gameOver = document.getElementById("fondo")
+    gameOver.pause()
+    gameOver.currentTime = 0;
+    gameOver.currenTime = 0;
+}
+
+
+//------------ Funciones ganador ------------//
+
+let winner = (Player1, Player2) => {
+    setTimeout(() => {
+            if (Player1 + Player2 == 9) {
+                if (Player1 > Player2) {
+
+
+
+                    setTimeout(() => {
+
+                        stopsoundInterstellar(); //Detener música fondo
+                        soundWinner() // Música ganador1
+
+                        document.getElementById("juego").innerHTML = `<h1 id='ganador1'>Congratulations, ${document.getElementById('user1').value}!...</h1>` +
+                            `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="50"></div>`
+
+                        setTimeout(() => {
+                            document.getElementById("juego").innerHTML += `<h2 id='mensajeGanador1'>Hiciste un gran trabajo</h2>`
+                        }, 780);
+                    }, 690);
+                } else {
+                    if (Player1 < Player2) {
+
+
+                        setTimeout(() => {
+
+                            stopsoundInterstellar(); //Detener música fondo
+                            soundWinner() // Música ganador2
+
+                            document.getElementById("juego").innerHTML = `<h1 id='ganador2'>Congratulations, ${document.getElementById('user2').value}!...</h1>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="50"></div>`
+
+
+                            setTimeout(() => {
+                                document.getElementById("juego").innerHTML += `<h2 id='mensajeGanador2'>No te detengas</h2>`
+                            }, 780);
+                        }, 690);
+
+                    } else {
+
+                        //playEmpate();
+                        setTimeout(() => {
+
+                            stopsoundInterstellar();
+                            soundWinner() // Música empate
+
+                            document.getElementById("juego").innerHTML = `<h1 id='empate'>Dead heat!...</h1>` +
+                                `<div class="moon"><img src="../data/assets/luna.png" alt="moon" class="moon" width="50"></div>`
+                            setTimeout(() => {
+                                document.getElementById("juego").innerHTML += `<h2 id='mensajeEmpate'>Juntos siempre es mejor</h2>`
+                            }, 780);
+                        }, 690);
+                    }
+                }
+            }
+        },
+        200)
 }
