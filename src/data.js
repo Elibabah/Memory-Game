@@ -1,18 +1,25 @@
-//---//> Obtener aquí los datos del JSON local y luego exportarlos para usarlos en el módulo app.js <//----//
+import { replayScore } from "./app.js"
 
-// Exportación de módulos
-export let getCardsfromAPI = (tarjetaParaBuscar) => {}
+console.log(replayScore)
 
-
-// traer la data del JSON con un fetch
-fetch("../data/memory.json")
-    .then((response) => response.json()) // traer el json
-    .then((data) => iterarTarjetas(data)) // traer data y dar a variable
-    .catch((error) => console.log(error)) // atrapar error
 
 // variable para el área de juego
 let mazo = document.getElementById("juego") // ID del HTML donde se imprimirá la iteración
+    // Exportación de módulos
 
+export let getCardsfromAPI = () => {
+    console.log("resetear")
+    mazo.innerHTML = ""; // limpiar cartas
+
+    replayScore() // activar función Resetear Score
+
+
+    // traer la data del JSON con un fetch
+    fetch("../data/memory.json")
+        .then((response) => response.json()) // traer el json
+        .then((data) => iterarTarjetas(data)) // traer data y dar a variable
+        .catch((error) => console.log(error)) // atrapar error
+};
 
 
 // variable para el área de tarjetas
@@ -20,7 +27,7 @@ let iterarTarjetas = (data) => { // iterar el objeto
     console.log(data.memory_Game) // consologuear el data del JSON
 
     //SORT desordenar el array
-    data.memory_Game.sort(() => Math.random() - 0.5)
+    data.memory_Game.sort(function() { return 0.5 - Math.random() });
 
     for (const ficha of data.memory_Game) { // iterar dinámicamente para entrar al objeto
         console.log(ficha.name) // consologuear la entrada al objeto
