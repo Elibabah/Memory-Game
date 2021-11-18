@@ -20,7 +20,10 @@ s1 {
     padding: 0%;
     column-gap: 0%;
     row-gap: 0%;
-    background-image: url();
+    /*background-image: url(https://static.vix.com/es/sites/default/files/styles/4x3/public/btg/curiosidades.batanga.com/files/8-cosas-sobre-Saturno-que-quiza-no-sabias.jpg);*/
+    /*background-image: url(https://www.elboletin.com/wp-content/uploads/2018/06/www.elboletin.com_fotos_1_104372_astronauta.jpg);*/
+    background-image: url(https://revistamyt.com/wp-content/uploads/2021/04/tierra1.jpeg);
+    /*background-image: url(https://media.traveler.es/photos/61376156d7c7024f9175de6d/master/pass/205153.jpg);*/
     background-size: cover;
 }
 
@@ -33,7 +36,7 @@ s1::after {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 s1 * {
