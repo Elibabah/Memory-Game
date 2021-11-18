@@ -14,6 +14,7 @@ play.addEventListener("click", () => {
     document.getElementById("screen-users").hidden = true;
     document.getElementById("game-screen").hidden = false;
 
+
     //----------- Registro usuarios -----------//
     let userName1 = document.getElementById("player01")
     userName1.innerHTML = document.getElementById("user1").value + " ";

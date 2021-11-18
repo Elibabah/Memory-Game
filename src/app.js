@@ -29,8 +29,8 @@ window.gameTest = {
         cardFlip.style.transform = "rotateY(180deg)" // Efecto de volteo
         console.log(cardName, cardId)
 
-
-        //------------ funciones de matching cards -----------//
+        soundInterstellar() // Activar función sonido de fondo
+            //------------ funciones de matching cards -----------//
 
         if (click == false) { //guardar datos en variable booleano para 2 click true false
             //primer click con una carta1 y valor1
@@ -170,6 +170,20 @@ let soundWinner = () => {
 };
 
 
+//---- Función sonido de fondo ----//
+let soundInterstellar = () => {
+    let ticToc = document.getElementById("fondo")
+    ticToc.play()
+    ticToc.loop = true;
+    ticToc.volume = 0.2
+};
+
+let stopsoundInterstellar = () => {
+    let gameOver = document.getElementById("fondo")
+    gameOver.pause()
+    gameOver.currentTime = 0;
+    gameOver.currenTime = 0;
+}
 
 
 //------------ Funciones ganador ------------//
@@ -178,11 +192,12 @@ let winner = (Player1, Player2) => {
     setTimeout(() => {
             if (Player1 + Player2 == 9) {
                 if (Player1 > Player2) {
-                    //stopFondo(); Detener música fondo
+
 
 
                     setTimeout(() => {
 
+                        stopsoundInterstellar(); //Detener música fondo
                         soundWinner() // Música ganador1
 
                         document.getElementById("juego").innerHTML = `<h1 id='ganador1'>Congratulations, ${document.getElementById('user1').value}!...</h1>` +
@@ -191,13 +206,14 @@ let winner = (Player1, Player2) => {
                         setTimeout(() => {
                             document.getElementById("juego").innerHTML += `<h2 id='mensajeGanador1'>Hiciste un gran trabajo</h2>`
                         }, 780);
-                    }, 700);
+                    }, 690);
                 } else {
                     if (Player1 < Player2) {
-                        //stopFondo();
+
 
                         setTimeout(() => {
 
+                            stopsoundInterstellar(); //Detener música fondo
                             soundWinner() // Música ganador2
 
                             document.getElementById("juego").innerHTML = `<h1 id='ganador2'>Congratulations, ${document.getElementById('user2').value}!...</h1>` +
@@ -207,13 +223,14 @@ let winner = (Player1, Player2) => {
                             setTimeout(() => {
                                 document.getElementById("juego").innerHTML += `<h2 id='mensajeGanador2'>No te detengas</h2>`
                             }, 780);
-                        }, 700);
+                        }, 690);
 
                     } else {
-                        //stopFondo();
+
                         //playEmpate();
                         setTimeout(() => {
 
+                            stopsoundInterstellar();
                             soundWinner() // Música empate
 
                             document.getElementById("juego").innerHTML = `<h1 id='empate'>Dead heat!...</h1>` +
@@ -221,7 +238,7 @@ let winner = (Player1, Player2) => {
                             setTimeout(() => {
                                 document.getElementById("juego").innerHTML += `<h2 id='mensajeEmpate'>Juntos siempre es mejor</h2>`
                             }, 780);
-                        }, 700);
+                        }, 690);
                     }
                 }
             }
