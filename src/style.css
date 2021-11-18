@@ -329,6 +329,7 @@ footer .fa-heart {
     align-items: center;
     border-radius: 10px;
     text-align: center;
+    opacity: 1;
 }
 
 .card-back {
